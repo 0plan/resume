@@ -1,0 +1,15 @@
+const Footer = () => {
+  return (
+      <div className="w3-margin-top w3-black w3-center w3-padding-24">Powered by <a
+          href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+          className="w3-hover-opacity">w3.css</a>
+        <br/>
+        Last Modified at 23.July.2019,
+        <a href='https://github.com/chlee125/resume/commits/master' target="_blank" className="w3-hover-opacity">Update
+          Note.</a>
+        <a href='https://github.com/chlee125/resume' target='_blank' className="w3-hover-opacity">
+          <i className="fab fa-github"></i>GitHub</a>
+      </div>
+  )
+}
+export default Footer;
