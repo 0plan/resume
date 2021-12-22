@@ -1,11 +1,11 @@
-const Description = (props) => {
-  
+/*const Description = (props) => {
+
   console.log(props.desc)
   const description = props.desc.forEach((item, i) => (
       <li>{item}</li>
   ))
   return <ul>{description}</ul>
-}
+}*/
 
 const Information = (props) => props.props.map((item, i) => (
     <div className="w3-container">
@@ -25,7 +25,7 @@ const Information = (props) => props.props.map((item, i) => (
               <span/>
       }
       </h6>
-      <Description desc={item.desc}/>
+      {/*<Description desc={item.desc}/>*/}
       <hr/>
     </div>
 ));
