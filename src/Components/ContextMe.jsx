@@ -19,9 +19,6 @@ const ContextMe = (props) => {
           <p><a href="https://github.com/chlee125" target="_blank" className="w3-hover-opacity">
             <i className="fa-fw w3-margin-right w3-large w3-text-teal fab fa-github"></i>
             chlee125</a></p>
-          <p><a href="https://blog.heybi.shop/" target="_blank" className="w3-hover-opacity">
-            <i className="fa-fw w3-margin-right w3-large w3-text-teal fa fa-rss"></i>
-            blog.heybi.shop</a></p>
         </div>
       </div>
   );
