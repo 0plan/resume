@@ -8,8 +8,8 @@ const Description = (props) => {
       )}
     </ul>
   )
-  
-  return (<div>{props.desc.length > 0 ? lists : ""}</div>)
+
+  return (<div>{props.desc.length > 0 || props.desc ? lists : ""}</div>)
 };
 
 const Information = (props) => props.props.map((item, i) => (
@@ -22,9 +22,11 @@ const Information = (props) => props.props.map((item, i) => (
       </b>
     </h5>
     <h6 className="w3-text-teal">
-      <i className="fa fa-calendar fa-fw w3-margin-right"></i>
+      <i className="fa fa-calendar fa-fw w3-margin-right" />
       {item.date.from} {item.date.to === 'Current' ?
-        <span className="w3-tag w3-teal w3-round">- {item.date.to}</span> :
+        <span> -&nbsp;
+            <span className="w3-tag w3-teal w3-round">{item.date.to}</span>
+        </span>:
         item.date.to ?
           <span>- {item.date.to}</span> :
           <span />

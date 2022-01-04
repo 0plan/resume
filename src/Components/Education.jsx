@@ -6,7 +6,7 @@ const Education = (props) => {
     {
       'position':'대학교',
       'name': '한국방송통신대학교',
-      'date': {'from': '2019년 03월', 'to': 'Current'},
+      'date': {'from': '2020년 03월', 'to': 'Current'},
       'desc': ['컴퓨터과학과 재학']
     }, {
       'position':'전문대학',

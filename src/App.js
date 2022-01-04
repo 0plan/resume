@@ -19,7 +19,6 @@ function App() {
         <Portfolio/>
         <Footer/>
       </div>
-
   );
 }
 

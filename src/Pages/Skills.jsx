@@ -15,20 +15,20 @@ const Skills = () => {
       percentage: '70%',
     }, {
       name: 'Python Django',
-      percentage: '30%',
+      percentage: '20%',
     }],
     language: [{
       name: 'Javascript ES5',
       percentage: '80%'
     }, {
       name: 'Javascript ES6',
-      percentage: '60%'
-    }, {
-      name: 'Java',
       percentage: '80%'
     }, {
+      name: 'Java',
+      percentage: '70%'
+    }, {
       name: 'Python',
-      percentage: '30%'
+      percentage: '50%'
     },]
   };
 
@@ -88,7 +88,7 @@ const Skills = () => {
       <div className="w3-row-padding w3-container">
         <div className="w3-container w3-card-4 w3-white w3-margin-bottom">
           <h2 className="w3-text-grey w3-padding-16">
-            <i className="fa fa-drafting-compass fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+            <i className="fa fa-drafting-compass fa-fw w3-margin-right w3-xxlarge w3-text-teal" />
             Technical Skills
           </h2>
           <div className="w3-row-padding">

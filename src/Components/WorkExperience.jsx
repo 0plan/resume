@@ -21,7 +21,7 @@ const WorkExperience = (props) => {
     "position": "워킹 홀리데이호주",
     "name": "호주",
     "date": {"from": "2017년 10월", "to": "2018년 8월"},
-    "desc": [""]
+    "desc": []
   }, {
     "position": "근로장학생",
     "name": "인하공업전문대학",
@@ -31,22 +31,22 @@ const WorkExperience = (props) => {
     "position": "자격증",
     "name": "정보처리 산업기사",
     "date": {"from": "2017년 08월", "to": ""},
-    "desc": [""]
+    "desc": []
   }, {
     "position": "자격증",
     "name": "정보처리 기능사",
     "date": {"from": "2017년 03월", "to": ""},
-    "desc": [""]
+    "desc": []
   }, {
     "position": "자격증",
     "name": "컴퓨터 활용능력 2급",
     "date": {"from": "2017년 01월", "to": ""},
-    "desc": [""]
+    "desc": []
   }, {
     "position": "수상",
     "name": "2016 과학기술인재 경시대회 (컴퓨팅적 사고 프로젝트) 동상",
     "date": {"from": "2016년 12월", "to": ""},
-    "desc": [""]
+    "desc": []
   }];
 
   return (<div className="w3-container w3-card w3-white w3-margin-bottom">
