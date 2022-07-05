@@ -49,7 +49,7 @@ const Portfolio = () => {
         }, {
             position: 'Java, Spring Boot, Gradle, JPA, QueryDSL',
             name: 'API Server 개발 및 유지보수',
-            date: {from: '2019년 12월', to: 'Current'},
+            date: {from: '2019년 12월', to: '2022년 2월'},
             desc: ["2019년 12월: Slack Bot 을 이용한 운영 업무 처리 기능 개발",
                 "2020년 1월 ~ 2월: 점포 API 개발 및 유지보수",
                 " 픽업 가능 점포 전달 API 개발",
@@ -67,13 +67,13 @@ const Portfolio = () => {
         }, {
             position: 'Spring MVC, eGovFramework, Maven, mybatis',
             name: '홈페이지 유지보수',
-            date: {from: '2020년 1월', to: 'Current'},
+            date: {from: '2020년 1월', to: '2022년 2월'},
             desc: ["2021년 2월 까지 현업 부서 요구 사항에 따른 기능 개발",
                 "2021년 3월 이후 외주 용역 계약으로 이후 배포 관리 진행"]
         }, {
             position: 'Spring MVC, eGovFramework, Maven, mybatis',
             name: '홈페이지 CMS 유지보수',
-            date: {from: '2020년 1월', to: 'Current'},
+            date: {from: '2020년 1월', to: '2022년 2월'},
             desc: ["2021년 2월 까지 현업 부서 요구 사항에 따른 기능 개발",
                 "2021년 3월 이후 외주 용역 계약으로 이후 배포 관리 진행"]
         }, {
@@ -87,7 +87,7 @@ const Portfolio = () => {
         }, {
             position: 'React.js, Express.js',
             name: '픽업지도 개발',
-            date: {from: '2021년 3월', to: 'Current'},
+            date: {from: '2021년 3월', to: '2022년 2월'},
             desc: ["~ 2021년 5월: 반값 픽업지도 오픈",
                 "UI/UX 및 프로세스 설계",
                 "페이코 앱 내 반값택배 예약 사용",
@@ -96,23 +96,23 @@ const Portfolio = () => {
         }, {
             position: 'Next.js',
             name: '픽업 지도 전환',
-            date: {from: '2022년 1월', to: 'Current'},
+            date: {from: '2022년 1월', to: '2022년 2월'},
             desc: ["react.js 를 next.js 로 전환"]
         }, {
             position: 'Python',
             name: '반복 운영 처리 업무 개발',
-            date: {from: '2019년 12월', to: 'Current'},
+            date: {from: '2019년 12월', to: '2022년 2월'},
             desc: ["Python 을 이용하여 DB Connection, 내부 API Server curl 요청",
                 "이후 Airflow 로 전환 예정"]
         }, {
             position: 'Unix(IBM AIX), Crontab, Shell Script',
             name: '배치관리',
-            date: {from: '2019년 9월', to: 'Current'},
+            date: {from: '2019년 9월', to: '2022년 2월'},
             desc: []
         }, {
             position: '기타',
             name: '배포 관리',
-            date: {from: '2019년 9월', to: 'Current'},
+            date: {from: '2019년 9월', to: '2022년 2월'},
             desc: ["형상관리: Git Branch 정책 관리 및 사용자 관리",
                 "CI/CD: Jenkins, Github Action",
                 "Docker, Docker Compose",
@@ -122,11 +122,35 @@ const Portfolio = () => {
         //{
         // position: '비용 관리',
         // name: '라이센스',
-        // date: {from: '', to: 'Current'},
+        // date: {from: '2019년 9월', to: '2022년 2월'},
         // desc: ["Jetbrains, Github, AWS, Parallels, DBSchema",
         //     "문서 작성: Notion, Jira, Confluence",
         // "앱개발: Google Play Store, Apple App Store"]
         // },
+        {
+            position: 'Nuxt.js',
+            name: 'LG U+ 로봇 관리 플랫폼',
+            date: {from: '2022년 3월', to: '2022년 5월'},
+            desc: []
+        },
+        {
+            position: 'Nuxt.js',
+            name: 'LG U+ 로봇 관제 플랫폼',
+            date: {from: '2022년 3월', to: '2022년 5월'},
+            desc: []
+        },
+        {
+            position: 'Nuxt.js',
+            name: 'LG U+ AI',
+            date: {from: '2022년 4월', to: '2022년 4월'},
+            desc: []
+        },
+        {
+            position: 'Nuxt.js',
+            name: 'LG U+ 데이터레이크',
+            date: {from: '2022년 6월', to: 'Current'},
+            desc: []
+        },
     ];
 
     return (

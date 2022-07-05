@@ -2,10 +2,16 @@ import Information from "./Information";
 
 const WorkExperience = (props) => {
 
-  const experiences = [{
+  const experiences = [
+  {
+    "position": "Frontend Developer",
+    "name": "애버커스 소프트웨어",
+    "date": {"from": "2022년 3월", "to": "Current"},
+    "desc": []
+  }, {
     "position": "Full Stack Developer",
     "name": "(주)GS네트웍스",
-    "date": {"from": "2020년 7월", "to": "Current"},
+    "date": {"from": "2020년 7월", "to": "2022년 2월"},
     "desc": []
   }, {
     "position": "Full Stack Developer",

@@ -2,7 +2,7 @@ const Skills = () => {
   const skills = {
     frontend: [{
       name: 'Vue.js',
-      percentage: '50%'
+      percentage: '70%'
     }, {
       name: 'React.js',
       percentage: '70%'
