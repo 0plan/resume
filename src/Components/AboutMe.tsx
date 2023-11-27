@@ -1,18 +1,26 @@
 const AboutMe = () => {
-  return (
-      <div className="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 className="w3-text-grey w3-padding-16">
-          <i className="fa fa-address-card fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me
-        </h2>
-        <div className="w3-container">
-          <h5 className="w3-opacity">
-            <b>더욱 편하게 살기 위해 개발을 하는 개발자</b>
-          </h5>
-          <p>프로그래밍에 흥미가 있고, 더욱 빠르고 편리한 삶을 추구합니다! 현재 React 를 공부하고 있습니다. <br/>
-            아이디어가 생기면 메모하고 바로 만들려고 노력합니다.</p>
-          <br/>
+    return (
+        <div className="w-1/2 bg-white shadow rounded">
+            <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+                <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="/sarah-dayan.jpg"
+                     alt="" width="384" height="512"/>
+                <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+                    <blockquote>
+                        <p className="text-lg font-medium text-slate-200">
+                            더욱 편하게 살기 위해 개발을 하는 개발자
+                        </p>
+                    </blockquote>
+                    <figcaption className="font-medium">
+                        <div className="text-sky-500 dark:text-sky-400">
+                            Lee, Chungho
+                        </div>
+                        <div className="text-slate-700 dark:text-slate-500">
+                            Fullstack Developer
+                        </div>
+                    </figcaption>
+                </div>
+            </figure>
         </div>
-      </div>
-  )
+    )
 }
 export default AboutMe;
