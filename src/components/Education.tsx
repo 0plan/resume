@@ -16,7 +16,7 @@ const Education = () => {
       'position':'수료',
       'name': '(사)인천지식산업협회',
       'date': {'from': '2016년 03월', 'to': '2016년 08월'},
-      'desc': ['Hybrid Web & App 개발자과정 수료 (800시간)']
+      'desc': ['Hybrid Web & Index 개발자과정 수료 (800시간)']
     }, {
       'position':'고등학교',
       'name': '인천 영선고등학교',

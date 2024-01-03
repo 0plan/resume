@@ -1,0 +1,11 @@
+project:
+  title: Resume
+profile:
+  name: 이충호 [Lee, Chungho]
+  email: chlee125@gmail.com
+  position: Full Stack Developer
+  description: 더욱 편하게 살기위해 개발하는 개발자
+
+update:
+  description: Last Modified at
+  date: 2.Jan.2024
