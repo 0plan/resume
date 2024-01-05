@@ -1,20 +1,85 @@
 project:
   title: Resume
+
 profile:
   name: Lee, Chungho
   email: chlee125@gmail.com
   position: Full Stack Developer
-  description: ''
+  description: Developer who develops to make life easier
+
 education:
   title: Education
-  items:
-    - title: University of California, Irvine
-      date: 2015.09 - 2017.06
-      description: Master of Science in Computer Science
-    - title: University of California, Irvine
-      date: 2011.09 - 2015.06
-      description: Bachelor of Science in Computer Science
+  contents:
+    - name: Korea National Open University
+      date:
+        from: Mar. 2020
+        to: Current
+      descriptions:
+        - Computer Science
+    - name: Inha Technical College
+      date:
+        from: Mar. 2016
+        to: Feb. 2019
+      descriptions:
+        - Information and Communication Engineering
+    - name: Incheon Knowledge Industry Promotion Agency
+      date:
+        from: Mar. 2016
+        to: Aug. 2016
+      descriptions:
+        - Hybrid Web & Developer Course Completion (800 hours)
+    - name: Incheon Yeongseon High School
+      date:
+        from: Mar. 2008
+        to: Feb. 2011
 
+portfolio:
+  title: Portfolio
+  contents:
+
+
+skill:
+  title: Skills
+  contents:
+    - title: Frontend
+      items:
+        - title: React
+          level: 4
+        - title: Vue
+          level: 4
+    - title: Backend
+      items:
+        - title: Node.js Express
+          level: 4
+        - title: Java Spring Boot
+          level: 4
+    - title: Database
+      items:
+        - title: Oracle
+          level: 4
+        - title: MySQL / MariaDB
+          level: 4
+        - title: MSSQL
+          level: 3
+    - title: DevOps
+      items:
+        - title: AWS / Azure / GCP
+          level: 3
+        - title: Docker
+          level: 4
+        - title: Jenkins / Github Actions
+          level: 4
+        - title: Git
+          level: 4
+        - title: Linux / Unix
+          level: 4
+    - title: Language
+      items:
+        - title: Korean
+          level: 5
+        - title: English
+          level: 3
 update:
   description: Last Modified at
-  date: 2.Jan.2024
+  date: 5. Jan. 2024
+
