@@ -1,12 +1,15 @@
-import { t } from 'i18next'
+import { useTranslation } from 'react-i18next'
+import avatar from '~/assets/img/avatar.jfif'
 
 const AboutMe = () => {
+  const { t } = useTranslation()
+
   return (
-    <div className="rounded shadow md:w-1/2">
+    <div className="rounded py-2 shadow">
       <figure className="rounded-xl bg-slate-100 p-8 md:flex md:p-0 dark:bg-slate-800">
         <img
           className="mx-auto h-24 w-24 rounded-full md:h-auto md:w-48 md:rounded-none"
-          src={'~/assets/img/gohome.jpg'}
+          src={avatar}
           alt=""
           width="384"
           height="512"

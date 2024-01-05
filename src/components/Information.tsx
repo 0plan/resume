@@ -1,42 +1,55 @@
-const Description = (props) => {
-  const lists = (
-    <ul>
-      {props.desc.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-  )
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@components/ui/card.tsx'
 
-  return <div>{props.desc.length > 0 || props.desc ? lists : ''}</div>
+interface InformationProps {
+  documents: {
+    position?: string
+    name: string
+    date: {
+      from: string
+      to: string
+    }
+    desc?: string[]
+    image?: string
+  }[]
+  title: string
 }
 
-const Information = (props) =>
-  props.props.map((item, index) => (
-    <div className="w3-container" key={index}>
-      <h5 className="w3-opacity">
-        <b>
-          {item.position ? <span>[{item.position}]</span> : <span />}{' '}
-          {item.name}
-        </b>
-      </h5>
-      <h6 className="w3-text-teal">
-        <i className="fa fa-calendar fa-fw w3-margin-right" />
-        {item.date.from}{' '}
-        {item.date.to === 'Current' ? (
-          <span>
-            {' '}
-            -&nbsp;
-            <span className="w3-tag w3-teal w3-round">{item.date.to}</span>
-          </span>
-        ) : item.date.to ? (
-          <span>- {item.date.to}</span>
-        ) : (
-          <span />
-        )}
-      </h6>
-      <Description desc={item.desc} />
-      <hr />
-    </div>
-  ))
+const Information = ({ documents, title }: InformationProps) => {
+  return (
+    <Card className="my-3 w-full">
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent className="grid gap-4">
+        <div>
+          {documents.map((item) => (
+            <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">
+              <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500" />
+              <div className="space-y-1">
+                <p className="font-mono font-medium leading-none">
+                  {item?.position}
+                </p>
+                <p className="text-sm font-bold">{item.name}</p>
+                <p className="text-sm text-muted-foreground">
+                  {item.date.from} - {item.date.to}
+                </p>
+                <ul>
+                  {item.desc?.map((description, descriptionIndex) => (
+                    <li key={descriptionIndex}>{description}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
 
 export default Information

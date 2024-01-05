@@ -1,5 +1,5 @@
 import { cn } from '~/lib/utils.ts'
-import { forwardRef } from 'react'
+import { forwardRef, HTMLAttributes } from 'react'
 
 const Card = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (

@@ -5,7 +5,9 @@ profile:
   email: chlee125@gmail.com
   position: Full Stack Developer
   description: 더욱 편하게 살기위해 개발하는 개발자
+education:
+  title: Education
 
 update:
   description: Last Modified at
-  date: 2.Jan.2024
+  date: 5.Jan.2024

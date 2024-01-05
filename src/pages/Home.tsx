@@ -1,16 +1,19 @@
-import { useTranslation } from 'react-i18next'
-import Left from '@components/Left.tsx'
-import Right from '@components/Right.tsx'
 import Skills from '@components/Skills.tsx'
 import Portfolio from '@components/Portfolio.tsx'
+import WorkExperience from '@components/WorkExperience.tsx'
+import AboutMe from '@components/AboutMe.tsx'
+import Education from '@components/Education.tsx'
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden before:absolute before:start-1/2 before:top-0">
-      <div className="w3-content w3-margin-top">
-        <div className="w3-row-padding">
-          <Left />
-          <Right />
+    <div>
+      <div className="md:flex">
+        <div className=" px-2 md:w-1/2">
+          <AboutMe />
+          <Education />
+        </div>
+        <div className="px-2 md:w-1/2">
+          <WorkExperience />
         </div>
       </div>
       <Skills />
