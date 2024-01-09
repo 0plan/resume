@@ -29,19 +29,17 @@ const Information = ({ documents }: InformationProps) => {
       </CardHeader>
       <CardContent className="grid gap-4">
         <div>
-          {documents.contents.map((item) => (
+          {documents.contents?.map((item) => (
             <div
               className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0"
               key={item.name}
             >
               <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500" />
               <div className="space-y-1">
-                <p className="font-mono font-medium leading-none">
-                  {item?.position}
-                </p>
-                <p className="text-sm font-bold">{item.name}</p>
+                <p className="font-medium leading-none">{item.name}</p>
+                <p className="text-sm font-bold">{item?.position}</p>
                 <p className="text-sm text-muted-foreground">
-                  {item.date.from} - {item.date.to}
+                  {item.date.from} {item.date.to ? '- ' + item.date.to : ''}
                 </p>
                 <ul>
                   {item.descriptions?.map((description, descriptionIndex) => (
