@@ -23,10 +23,7 @@ interface SkillProps {
 }
 const SkillProgress = ({ contents }: SkillProps) => {
   return contents.map((content) => (
-    <Card
-      className={cn('md:my-3 md:w-full lg:mx-3 lg:w-1/3')}
-      key={content.title}
-    >
+    <Card className={cn('my-3 md:w-full lg:mx-3 lg:w-1/3')} key={content.title}>
       <CardHeader>
         <CardTitle>{content.title}</CardTitle>
       </CardHeader>
@@ -50,14 +47,17 @@ const Skills = () => {
   const { t } = useTranslation()
 
   return (
-    <div>
-      <p className="py-3 text-2xl">{t('skill.title')}</p>
-      <div className="lg:flex">
+    <Card>
+      <CardHeader>
+        <CardTitle>{t('skill.title')}</CardTitle>
+      </CardHeader>
+      <CardContent className="lg:flex">
         <SkillProgress
           contents={t('skill.contents', { returnObjects: true })}
         />
-      </div>
-    </div>
+      </CardContent>
+      <div className="lg:flex"></div>
+    </Card>
   )
 }
 
