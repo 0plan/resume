@@ -312,17 +312,32 @@ portfolio:
           from: Oct. 2023
           to: Current
 
-    - name: LG U+ Customer 360 Planning
+    - name: LG U+ Datafarm Customer 360 2.0 Planning
       position: 'Abacus Software, Planning'
       date:
           from: Oct. 2023
           to: Dec. 2023
+      descriptions:
+        - Planning document creation
+        - Function specification creation
 
-    - name: LG U+ Customer 360 Development Support
+    - name: LG U+ Datafarm Customer 360 Advanced Development
       position: 'Abacus Software'
       date:
-          from: Dec. 2023
-          to: Feb. 2024 (Scheduled)
+        from: Dec. 2023
+        to: Feb. 2024
+
+    - name: 'Vite + React + Typescript + Tailwindcss + i18n Personal Project'
+      position: 'Personal Project'
+      date:
+        from: Jan. 2024
+        to: Current
+      descriptions:
+        - Template project using Vite, React, Typescript, Tailwindcss, i18n
+        - Project github [https://github.com/chlee125/vrtn]
+        - Deployment on Vercel [https://vite-react-typescript-i18n-template.vercel.app]
+        - Component Storybook using shadcn/ui[https://ui.shadcn.com]
+
 
 skill:
   title: Skills
@@ -366,42 +381,21 @@ skill:
         - title: English
           level: 3
 
-
-#experiences:
-#  title: 경력
-#  contents:
 experiences:
   title: Experiences
   contents:
-#    - name: 애버커스 소프트웨어
-#      position: Frontend Developer
-#      date:
-#        from: 2022년 3월
-#        to: Current
     - name: Abacus Software
       position: Frontend Developer
       date:
         from: Mar. 2022
         to: Current
-#
-#    - name: (주)GS네트웍스
-#      position: Full Stack Developer
-#      date:
-#        from: 2020년 7월
-#        to: 2022년 2월
+
     - name: GS Networks Co., Ltd.
       position: Full Stack Developer
       date:
         from: Jul. 2020
         to: Feb. 2022
-#
-#    - name: CVSnet(주)
-#      position: Full Stack Developer
-#      descriptions:
-#        - (주)GS네트웍스 합병
-#      date:
-#        from: 2019년 9월
-#        to: 2020년 7월
+
     - name: CVSnet Co., Ltd.
       position: Full Stack Developer
       descriptions:
@@ -409,54 +403,31 @@ experiences:
       date:
         from: Sep. 2019
         to: Jul. 2020
-#
-#    - name: 에이맨시스템(주)
-#      position: Full Stack Developer
-#      date:
-#        from: 2019년 3월
-#        to: 2019년 9월
+
     - name: Aman System Co., Ltd.
       position: Full Stack Developer
       date:
         from: Mar. 2019
         to: Sep. 2019
 
-#certificates:
-#  title: 수상 및 자격
 certificates:
   title: Certificates
   contents:
-#    - name: 정보처리 산업기사
-#      position: 자격증
-#      date:
-#        from: 2017년 08월
     - name: Information Processing Engineer
       position: Certificate
       date:
         from: Aug. 2017
-#
-#    - name: 정보처리 기능사
-#      position: 자격증
-#      date:
-#        from: 2017년 03월
+
     - name: Information Processing Technician
       position: Certificate
       date:
         from: Mar. 2017
-#
-#    - name: 컴퓨터 활용능력 2급
-#      position: 자격증
-#      date:
-#        from: 2017년 01월
+
     - name: Computer Application Ability 2nd Grade
       position: Certificate
       date:
         from: Jan. 2017
-#
-#    - name: 2016 과학기술인재 경시대회 (컴퓨팅적 사고 프로젝트) 동상
-#      position: 수상
-#      date:
-#        from: 2016년 12월
+
     - name: 2016 Science and Technology Talent Competition (Computational Thinking Project) Bronze Medal
       position: Award
       date:
@@ -464,4 +435,4 @@ certificates:
 
 update:
   description: Last Modified at
-  date: 10. Jan. 2024
+  date: 21. Mar. 2024

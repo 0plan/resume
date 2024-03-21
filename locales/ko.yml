@@ -308,7 +308,6 @@ portfolio:
       descriptions:
         - Frontend PL
         - 프로젝트 내에서 공통으로 사용할 컴포넌트 개발
-        - resumable.js 를 이용한 대용량 파일 업로드
 
     - name: 'LG U+ 상품출시 지원 시스템 운영'
       position: '애버커스소프트웨어, Vite, Vue3, Typescript'
@@ -316,17 +315,31 @@ portfolio:
         from: 2023년 10월
         to: Current
 
-    - name: 'LG U+ Customer 360 기획'
+    - name: 'LG U+ 데이터팜 Customer 360 고도화 기획'
       position: '애버커스소프트웨어, 기획'
       date:
         from: 2023년 10월
         to: 2023년 12월
+      descriptions:
+        - 기획서 작성
+        - 기능 명세서 작성
 
-    - name: 'LG U+ Customer 360 개발 지원'
+    - name: 'LG U+ 데이터팜 Customer 360 고도화 개발'
       position: '애버커스소프트웨어'
       date:
         from: 2023년 12월
-        to: 2024년 2월 (예정)
+        to: 2024년 2월
+
+    - name: 'Vite + React + Typescript + Tailwindcss + i18n 개인 프로젝트'
+      position: '개인 프로젝트'
+      date:
+        from: 2024년 1월
+        to: Current
+      descriptions:
+        - Vite, React, Typescript, Tailwindcss, i18n 을 사용한 템플릿 프로젝트
+        - 프로젝트 github [https://github.com/chlee125/vrtn]
+        - Vercel 배포 [https://vite-react-typescript-i18n-template.vercel.app]
+        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
 
 skill:
   title: Skills
@@ -424,4 +437,4 @@ certificates:
 
 update:
   description: 수정일자
-  date: 2024년 1월 10일
+  date: 2024년 3월 21일
