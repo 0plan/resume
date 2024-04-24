@@ -48,7 +48,7 @@ portfolio:
       descriptions:
         - 학적부 보관실에서 구 학적자의 성적 입력 업무처리를 하기위해 개발 하였습니다.
         - 한 페이지 입력에 30분 소요 되던 작업을 1분 으로 단축하였습니다.
-        - https://github.com/chlee125/grade-macro
+        - https://github.com/0plan/grade-macro
       image: autohotkey.png
 
     - name: 김비서
@@ -337,7 +337,7 @@ portfolio:
         to: Current
       descriptions:
         - Vite, React, Typescript, Tailwindcss, i18n 을 사용한 템플릿 프로젝트
-        - 프로젝트 github [https://github.com/chlee125/vrtn]
+        - 프로젝트 github [https://github.com/0plan/vrtn]
         - Vercel 배포 [https://vite-react-typescript-i18n-template.vercel.app]
         - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
 
