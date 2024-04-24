@@ -334,7 +334,7 @@ portfolio:
         to: Current
       descriptions:
         - Template project using Vite, React, Typescript, Tailwindcss, i18n
-        - Project github [https://github.com/chlee125/vrtn]
+        - Project github [https://github.com/0plan/vrtn]
         - Deployment on Vercel [https://vite-react-typescript-i18n-template.vercel.app]
         - Component Storybook using shadcn/ui[https://ui.shadcn.com]
 
