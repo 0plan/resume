@@ -15,7 +15,7 @@ const Header = () => {
         className="mx-auto flex w-full max-w-[85rem] items-center justify-between px-4"
         aria-label="Global"
       >
-        <Link to="/" className="text-xl font-semibold">
+        <Link to="/resume" className="text-xl font-semibold">
           {t("project.title")}
         </Link>
         <div className="flex items-center justify-end sm:px-10">
