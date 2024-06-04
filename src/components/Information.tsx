@@ -21,13 +21,11 @@ interface InformationProps {
   };
 }
 
-function CreateLink({ description }) {
-  const processedDescription = description.replace(
+function CreateLink({ description }: { description: string }) {
+  return description.replace(
     /(http(s)?:\/\/)([a-z0-9\w]+\.*)+[a-z0-9]{2,4}([/a-z0-9-%#?&=\w])+(\.[a-z0-9]{2,6}(\?[/a-z0-9-%#?&=\w]+)*)*/gi,
     '<a href="$&" target="_blank" class="text-sky-500">$&</a>',
   );
-
-  return processedDescription;
 }
 
 const Information = ({ documents }: InformationProps) => {
