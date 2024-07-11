@@ -5,6 +5,7 @@ profile:
   email: chlee125@gmail.com
   position: Full Stack Developer
   description: 더욱 편하게 살기위해 개발하는 개발자
+#  blog: https://0plan.dev
 
 education:
   title: 교육
@@ -13,9 +14,9 @@ education:
       position: 컴퓨터과학과
       date:
         from: 2020년 03월
-        to: Current
+        to: 2024년 08월
       descriptions:
-        - 재학중
+        - 졸업 예정
     - name: 인하공업전문대학
       position: 정보통신공학과
       date:
@@ -437,4 +438,4 @@ certificates:
 
 update:
   description: 수정일자
-  date: 2024년 3월 21일
+  date: 2024년 7월 11일
