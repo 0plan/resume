@@ -14,10 +14,9 @@ education:
       position: Bachelor of Computer Science
       date:
         from: Mar. 2020
-        to: Current
+        to: Aug. 2024
       descriptions:
-        - Attending
-        - Expected to graduate in 2024
+        - Expected Graduation
     - name: Inha Technical College, South Korea
       position: Department of Information and Communication Engineering
       date:
@@ -435,4 +434,4 @@ certificates:
 
 update:
   description: Last Modified at
-  date: 21. Mar. 2024
+  date: 11. July. 2024
