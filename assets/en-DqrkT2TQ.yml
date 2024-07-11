@@ -334,9 +334,30 @@ portfolio:
       descriptions:
         - Template project using Vite, React, Typescript, Tailwindcss, i18n
         - Project github [https://github.com/0plan/vrtn]
-        - Deployment on Vercel [https://vite-react-typescript-i18n-template.vercel.app]
+        - Deployment on Vercel [https://vrtn.0plan.dev/]
         - Component Storybook using shadcn/ui[https://ui.shadcn.com]
 
+    - name: 'Next + React + Typescript + Tailwindcss Personal Project'
+      position: 'Personal Project'
+      date:
+        from: May. 2024
+        to: Current
+      descriptions:
+        - Template project using Next, React, Typescript, Tailwindcss
+        - Project github [https://github.com/0plan/next-common]
+        - Deployment on Vercel [https://next.0plan.dev/]
+        - Component Storybook using shadcn/ui[https://ui.shadcn.com]
+
+    - name: 'Vite + Vue.js + Typescript + Tailwindcss + i18n Personal Project'
+      position: 'Personal Project'
+      date:
+        from: May. 2024
+        to: Current
+      descriptions:
+        - Template project using Vite, Vue.js, Typescript, Tailwindcss, i18n
+        - Project github [https://github.com/0plan/vue3-starter-template]
+        - Deployment on Vercel [https://vue.0plan.dev/]
+        - Component Storybook using shadcn/ui[https://ui.shadcn.com]
 
 skill:
   title: Skills
