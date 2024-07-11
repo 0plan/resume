@@ -339,7 +339,29 @@ portfolio:
       descriptions:
         - Vite, React, Typescript, Tailwindcss, i18n 을 사용한 템플릿 프로젝트
         - 프로젝트 github [https://github.com/0plan/vrtn]
-        - Vercel 배포 [https://vite-react-typescript-i18n-template.vercel.app]
+        - Vercel 배포 Demo[https://vrtn.0plan.dev/]
+        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
+
+    - name: 'Next + React + Typescript + Tailwindcss 개인 프로젝트'
+      position: '개인 프로젝트'
+      date:
+        from: 2024년 5월
+        to: Current
+      descriptions:
+        - Next, React, Typescript, Tailwindcss 를 사용한 템플릿 프로젝트
+        - 프로젝트 github [https://github.com/0plan/next-common]
+        - Vercel 배포 Demo[https://next.0plan.dev/]
+        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
+
+    - name: 'Vite + Vue.js + Typescript + Tailwindcss + i18n 개인 프로젝트'
+      position: '개인 프로젝트'
+      date:
+        from: 2024년 5월
+        to: Current
+      descriptions:
+        - Vite, Vue.js, Typescript, Tailwindcss, i18n 을 사용한 템플릿 프로젝트
+        - 프로젝트 github [https://github.com/0plan/vue3-starter-template]
+        - Vercel 배포 Demo[https://vue.0plan.dev/]
         - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
 
 skill:
