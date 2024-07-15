@@ -23,11 +23,11 @@ interface SkillProps {
 }
 const SkillProgress = ({ contents }: SkillProps) => {
   return contents.map((content) => (
-    <Card className={cn("my-3 md:w-full lg:mx-3 lg:w-1/3")} key={content.title}>
+    <Card className={cn("w-full")} key={content.title}>
       <CardHeader>
         <CardTitle>{content.title}</CardTitle>
       </CardHeader>
-      <CardContent className="grid gap-4">
+      <CardContent className="grid gap-1">
         {content.items.map((skill) => (
           <div
             key={skill.title}
@@ -51,7 +51,7 @@ const Skills = () => {
       <CardHeader>
         <CardTitle>{t("skill.title")}</CardTitle>
       </CardHeader>
-      <CardContent className="lg:flex">
+      <CardContent className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
         <SkillProgress
           contents={t("skill.contents", { returnObjects: true })}
         />
