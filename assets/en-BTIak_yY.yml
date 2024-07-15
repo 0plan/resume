@@ -374,6 +374,10 @@ skill:
           level: 4
         - title: Java Spring Boot
           level: 4
+    - title: Mobile App
+      items:
+       - title: Flutter
+         level: 2
     - title: Database
       items:
         - title: Oracle
@@ -455,4 +459,4 @@ certificates:
 
 update:
   description: Last Modified at
-  date: 11. July. 2024
+  date: 15. July. 2024
