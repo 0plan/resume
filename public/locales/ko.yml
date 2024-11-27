@@ -1,5 +1,6 @@
 project:
   title: 이력서
+
 profile:
   name: 이충호 [Lee, Chungho]
   email: chlee125@gmail.com
@@ -426,48 +427,47 @@ skill:
     - title: Frontend
       items:
         - title: React
-          level: 4
+          level: 7
         - title: Vue
-          level: 4
+          level: 9
     - title: Backend
       items:
         - title: Node.js
-          level: 4
+          level: 7
         - title: Java Spring Boot
-          level: 4
+          level: 8
     - title: Etc.
       items:
         - title: Flutter
-          level: 2
+          level: 3
         - title: Typescript
-          level: 4
-
+          level: 8
     - title: Database
       items:
         - title: Oracle
-          level: 4
+          level: 7
         - title: MySQL / MariaDB
-          level: 4
+          level: 7
         - title: MSSQL
-          level: 3
+          level: 6
     - title: DevOps
       items:
         - title: AWS / Azure / GCP
-          level: 3
+          level: 6
         - title: Docker
-          level: 4
+          level: 8
         - title: Jenkins / Github Actions
-          level: 4
+          level: 8
         - title: Git
-          level: 4
+          level: 8
         - title: Linux / Unix
-          level: 4
+          level: 8
     - title: 언어
       items:
         - title: 한국어
-          level: 5
+          level: 10
         - title: 영어
-          level: 3
+          level: 5
 
 experiences:
   title: 경력

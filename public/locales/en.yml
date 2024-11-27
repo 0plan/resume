@@ -12,354 +12,414 @@ profile:
 education:
   title: Education
   contents:
-    - name: Korea National Open University, South Korea
-      position: Bachelor of Computer Science
+    - name: Korea National Open University, Republic of Korea
+      position: Department of Computer Science
       date:
-        from: Mar. 2020
-        to: Aug. 2024
+        from: March 2020
+        to: August 2024
       descriptions:
         - Graduated
-    - name: Inha Technical College, South Korea
+    - name: Inha Technical College, Republic of Korea
       position: Department of Information and Communication Engineering
       date:
-        from: Mar. 2016
-        to: Feb. 2019
+        from: March 2016
+        to: February 2019
       descriptions:
         - Graduated
-    - name: Incheon Knowledge Industry Association, South Korea
+    - name: Incheon Knowledge Industry Association, Republic of Korea
       position: Hybrid Web & App Developer Course
       date:
-        from: Mar. 2016
-        to: Aug. 2016
+        from: March 2016
+        to: August 2016
       descriptions:
-        - 800 hours
-    - name: Incheon Yeongsun High School, South Korea
-      position: Science
+        - Completed 800 hours
+    - name: Incheon Yeongsun High School, Republic of Korea
+      position: Science Track
       date:
-        from: Mar. 2008
-        to: Feb. 2011
+        from: March 2008
+        to: February 2011
       descriptions:
         - Graduated
 
-portfolio:
-  title: Portfolio
+careers:
+  title: Career History
   contents:
-    - name: Grade Macro
-      position: 'Inha Technical College, AutoHotKey'
+    - name: 'LG U+ Product Launch Support System Enhancement - Terms of Service Project'
+      position: 'Abacus Software Co., Ltd., Frontend Development, SM, SI, PL'
+      tools: 'Vite, Vue3, Typescript'
       date:
-        from: Nov. 2016
-      descriptions:
-        - Developed to handle grade input work of former students in the student office.
-        - Reduced the work that took 30 minutes per page to 1 minute.
+        from: November 2024
+        to: Current
 
-    - name: Assist Kim
-      position: 'Incheon Knowledge Industry Association, JAVA, JSP, Oracle, Cordova, JQuery, JQuery Mobile'
+    - name: 'LG U+ Product Launch Support System Enhancement - Mobile Typification Project'
+      position: 'Abacus Software Co., Ltd., Frontend Development, PL'
+      tools: 'Vite, Vue3, Typescript'
       date:
-          from: May. 2016
-          to: Jun. 2016
-      descriptions:
-        - 'Participants: 4'
-        - Participated in the development of a Cordova-based schedule management Web App as a Semi Project for the Hybrid Web & App Developer Course.
-        - Implemented route search using Google Map API, and implemented favorites by saving routes to the database.
-        - Parsed XML to JSON using the K-Weather API.
+        from: August 2024
+        to: October 2024
 
-    - name: Do you travel?
-      position: 'Incheon Knowledge Industry Association, JAVA, JSP, Spring Framework, Oracle, Javascript, JQuery'
+    - name: 'LG U+ Mobile Data Farm Development Support'
+      position: 'Abacus Software Co., Ltd.'
+      tools: 'Vite, Vue3, Typescript'
       date:
-          from: Jul. 2016
-          to: Aug. 2016
-      descriptions:
-        - It was developed based on the Spring Framework as a Hybrid Web & App Developer Course Final Project.
-        - We designed the database and implemented Naver ID login (Oauth).
-        - It was implemented to show the preferred travel destinations by age group and gender based on the number of recommendations and posts when logging in.
-        - The Administrator page was implemented using the Bootstrap Dashboard.
+        from: March 2024
+        to: September 2024
 
-    - name: Company Homepage
-      position: 'Aman System Co., Ltd., Node.js, Express.js'
+    - name: 'LG U+ Data Farm Customer 360 Enhancement Development'
+      position: 'Abacus Software Co., Ltd. Frontend Development'
       date:
-        from: Mar. 2019
-        to: May. 2019
-      descriptions:
-        - Developed the Aman System Co., Ltd. homepage.
-        - Renewed the existing homepage.
-        - Implemented the Backend using Express.js of Node.js.
-        - Implemented the Frontend using ejs.
+        from: December 2023
+        to: February 2024
 
-    - name: A-Pad
-      position: 'Aman System Co., Ltd., Express.js, Vue.js, PWA'
+    - name: 'LG U+ Data Farm Customer 360 Enhancement Planning'
+      position: 'Abacus Software Co., Ltd., Project Planning'
       date:
-          from: May. 2019
-          to: Jun. 2019
+        from: October 2023
+        to: December 2023
       descriptions:
-        - Worked on the Frontend and Backend of the mobile attendance management software A-Pad.
-        - Implemented the Backend using Express.js of Node.js.
-        - Implemented the Frontend using Vue.js.
-        - Developed as a Progressive Web App (PWA).
+        - Drafting project plans
+        - Creating functional specifications
 
-    - name: Going out / Going out management
-      position: 'Aman System Co., Ltd., Express.js, Vue.js, PWA'
+    - name: 'LG U+ Product Launch Support System Operation'
+      position: 'Abacus Software Co., Ltd., SM'
+      tools: 'Vite, Vue3, Typescript'
       date:
-          from: Jun. 2019
-          to: Jul. 2019
-      descriptions:
-          - Developed software for applying for going out and going out of dormitory-type schools.
-          - Implemented the Backend using Express.js of Node.js.
-          - Implemented the Frontend using Vue.js.
-          - Developed as a Progressive Web App (PWA).
+        from: October 2023
+        to: Current
 
-    - name: DevOps
-      position: 'GS Networks Co., Ltd., DevOps'
+    - name: 'LG U+ Product Launch Support System'
+      position: 'Abacus Software Co., Ltd., Planning, Frontend Development, PL'
+      tools: 'Vite, Vue3, Typescript'
       date:
-          from: Sep. 2019
-          to: Feb. 2022
+        from: April 2023
+        to: October 2023
       descriptions:
-          - 'Configuration Management: Git Branch Policy Management and User Management'
-          - 'CI/CD: Jenkins, Github Action'
-          - Docker, Docker Compose
-          - IBM AIX, AWS, Portainer
-          - Jetbrains, Github, AWS, Parallels, DBSchema
-          - 'App Development: Google Play Store, Apple App Store'
-          - 'Project Collaboration: Slack'
-          - 'Project Configuration Management: Github'
-          - 'Project Management: Jira'
-          - 'Project Documentation: Notion, Confluence'
+        - Frontend PL
+        - Development of common components for use within the project
 
-    - name: Slack Bot
-      position: 'GS Networks Co., Ltd.'
+    - name: 'LG U+ Serving Robot App'
+      position: 'Abacus Software Co., Ltd., Planning, Frontend Development, PL'
+      tools: 'Vite, Vue3, Typescript'
       date:
-          from: Dec. 2019
+        from: December 2022
+        to: March 2023
       descriptions:
-          - Automation of operation tasks using Slack Bot
+        - Frontend PL
+        - Development of common components for use within the project
+        - Data visualization using Apache eCharts
+        - Real-time data processing using MQTT
+        - Webview development for App
+        - Native App interaction development
 
-    - name: Convenience store information API development
-      position: 'GS Networks Co., Ltd., Java, Spring Boot, Gradle, JPA, QueryDSL'
+    - name: 'LG U+ Data Lake'
+      position: 'Abacus Software Co., Ltd., Frontend Development'
+      tools: 'Nuxt, Vue2, Composition API'
       date:
-          from: Jan. 2020
-          to: Feb. 2020
+        from: June 2022
+        to: December 2022
       descriptions:
-          - Provide convenience store pickup, half-price delivery, and domestic delivery information
-          - Provide information on holidays and new store openings
-          - ORM development using JPA and QueryDSL
+        - Responsibilities
+        - Data generation page for big data processing
+        - Statistical data generation page for data visualization
+        - Data processing page for confidential information handling
 
-    - name: Convenience store information API maintenance
-      position: 'GS Networks Co., Ltd.'
+    - name: LG U+ AI
+      position: 'Abacus Software Co., Ltd., Frontend Development'
+      tools: 'Nuxt, Vue2, Composition API'
       date:
-          from: Feb. 2020
-          to: Feb. 2022
+        from: April 2022
+        to: April 2022
       descriptions:
-          - Additional functions and maintenance after development
-
-    - name: Event convenience store information API development
-      position: 'GS Networks Co., Ltd., Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: Mar. 2020
-          to: Apr. 2020
-      descriptions:
-          - DB design for store list for events
-
-    - name: Event convenience store information page development
-      position: 'GS Networks Co., Ltd., Vue.js'
-      date:
-          from: Mar. 2020
-          to: Apr. 2020
-      descriptions:
-          - Developed with Vue.js
-          - UI/UX design
-          - Generate discount coupon barcode
-
-    - name: Development according to change of member grade process
-      position: 'GS Networks Co., Ltd., Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: Jul. 2020
-      descriptions:
-          - Changed the member grade change process that was previously operated by Lagacy Batch Shell to operate with Spring Batch
-
-    - name: Map of half-price delivery
-      position: 'GS Networks Co., Ltd., React.js, Express.js'
-      date:
-          from: Mar. 2021
-      descriptions:
-          - UI/UX and process design
-          - Half-price delivery reservation using Payco app
-
-    - name: Map of domestic delivery pickup
-      position: 'GS Networks Co., Ltd., React.js, Express.js'
-      date:
-          from: Oct. 2021
-      descriptions:
-          - Developed by linking the domestic delivery pickup API to the existing half-price delivery UI/UX.
-
-    - name: Linkage of Naver map convenience store delivery reception availability
-      position: 'GS Networks Co., Ltd., Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: Jan. 2021
-          to: Feb. 2021
-      descriptions:
-          - Linkage of convenience store delivery reception availability to Naver map
-          - Worked on adding functions to the convenience store information API developed in February 2020 to link it to Naver map.
-
-    - name: Support for half-price delivery reservation in Payco
-      position: 'GS Networks Co., Ltd., Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: May. 2021
-      descriptions:
-          - Support for half-price delivery reservation in Payco app
-          - Support for linking to the convenience store information API developed in February 2020
-
-    - name: Development of Daehan Express address refinement API
-      position: 'GS Networks Co., Ltd., Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: Nov. 2021
-          to: Dec. 2021
-      descriptions:
-          - Daehan Express address refinement API integration
-          - DB design for Daehan Express address refinement API integration
-    - name: Development of Sujiwonnet address refinement API
-      position: 'GS Networks Co., Ltd., Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: Dec. 2021
-          to: Current
-      descriptions:
-          - Sujiwonnet address refinement API integration
-          - DB design for Sujiwonnet address refinement API integration
-
-    - name: Homepage maintenance
-      position: 'GS Networks Co., Ltd., Spring MVC, eGovFramework, Maven, mybatis'
-      date:
-          from: Jan. 2020
-          to: Feb. 2022
-      descriptions:
-        - Developed functions according to the requirements of the current department until February 2021.
-        - After March 2021, it was outsourced and managed for deployment.
-
-    - name: Homepage CMS maintenance
-      position: 'GS Networks Co., Ltd., Spring MVC, eGovFramework, Maven, mybatis'
-      date:
-          from: Jan. 2020
-          to: Feb. 2022
-      descriptions:
-        - Developed functions according to the requirements of the current department until February 2021.
-        - After March 2021, it was outsourced and managed for deployment.
-
-    - name: Batch management
-      position: 'GS Networks Co., Ltd., Unix(IBM AIX), Crontab, Shell Script'
-      date:
-          from: Sep. 2019
-          to: Feb. 2022
-      descriptions:
-        - File-based data processing for large data processing
+        - Admin page for managing U+ recommendation AI
 
     - name: LG U+ Robot Management Platform
-      position: 'Abacus Software, Nuxt, Vue2'
+      position: 'Abacus Software Co., Ltd., Frontend Development'
+      tools: 'Nuxt, Vue2'
       date:
-          from: Mar. 2022
-          to: May. 2022
+        from: March 2022
+        to: May 2022
       descriptions:
         - User page for robot management
 
     - name: LG U+ Robot Control Platform
-      position: 'Abacus Software, Nuxt, Vue2'
+      position: 'Abacus Software Co., Ltd., Frontend Development'
+      tools: 'Nuxt, Vue2'
       date:
-          from: Mar. 2022
-          to: May. 2022
+        from: March 2022
+        to: May 2022
       descriptions:
         - Admin page for robot control
 
-    - name: LG U+ AI
-      position: 'Abacus Software, Nuxt, Vue2, Composition API'
+    - name: Sujiwon.net Address Refinement API Development
+      position: 'GS Networks Co., Ltd.'
+      tools: 'Java, Spring Boot, Gradle, JPA, QueryDSL'
       date:
-          from: Apr. 2022
-          to: Apr. 2022
+        from: December 2021
       descriptions:
-        - Admin page for managing U+ recommendation AI
+        - Development of address search system using Sujiwon.net address refinement system
 
-    - name: LG U+ Data Lake
-      position: 'Abacus Software, Nuxt, Vue2, Composition API'
+    - name: Daehan Logistics Address Refinement API Development
+      position: 'GS Networks Co., Ltd.'
+      tools: 'Java, Spring Boot, Gradle, JPA, QueryDSL'
       date:
-          from: Jun. 2022
-          to: Dec. 2022
+        from: November 2021
+        to: December 2021
       descriptions:
-        - Responsible for
-        - Data generation page for big data processing
-        - Statistical data generation page for data visualization
-        - Data processing page for confidential processing
+        - Integration of Daehan Logistics address refinement API
+        - DB design for Daehan Logistics address refinement API integration
 
-    - name: LG U+ Serving Robot App
-      position: 'Abacus Software, Vite, Vue3, Typescript'
+    - name: Domestic Parcel Convenience Store Pickup Map Development
+      position: 'GS Networks Co., Ltd.'
+      tools: React.js, Express.js
       date:
-          from: Dec. 2022
-          to: Mar. 2023
+        from: October 2021
       descriptions:
-        - Frontend PL
-        - Developed common components to be used in the project
-        - Data visualization using Apache eCharts
-        - Real-time data processing using mqtt
-        - Webview development for App
-        - Native App operation integration development
+        - Development by integrating domestic parcel convenience store pickup API into existing half-price parcel UI/UX
 
-    - name: LG U+ Product Launch Support System
-      position: 'Abacus Software, Vite, Vue3, Typescript'
+    - name: PAYCO Half-Price Parcel Reservation Service Development Support
+      position: 'GS Networks Co., Ltd.'
       date:
-          from: Apr. 2022
-          to: Oct. 2023
+        from: May 2021
       descriptions:
-        - Frontend PL
-        - Developed common components to be used in the project
-        - Large file upload using resumable.js
+        - Explanation of integration process and development support for adding half-price parcel reservation function in PAYCO app
+        - Support for integration of convenience store information API developed in February 2020
 
-    - name: LG U+ Product Launch Support System Operation
-      position: 'Abacus Software, Vite, Vue3, Typescript'
+    - name: Half-Price Parcel Map Development
+      position: 'GS Networks Co., Ltd.'
+      tools: React.js, Express.js
       date:
-          from: Oct. 2023
-          to: Current
-
-    - name: LG U+ Datafarm Customer 360 2.0 Planning
-      position: 'Abacus Software, Planning'
-      date:
-          from: Oct. 2023
-          to: Dec. 2023
+        from: March 2021
       descriptions:
-        - Planning document creation
-        - Function specification creation
+        - UI/UX and process design
+        - Use of half-price parcel reservation in PAYCO app
 
-    - name: LG U+ Datafarm Customer 360 Advanced Development
-      position: 'Abacus Software'
+    - name: Naver Map Convenience Store Parcel Reception Availability Integration
+      position: 'GS Networks Co., Ltd.'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
       date:
-        from: Dec. 2023
-        to: Feb. 2024
+        from: January 2021
+        to: February 2021
+      descriptions:
+        - Integration of convenience store parcel reception availability display on Naver Map
+        - Work on adding functionality to the convenience store information API developed in February 2020 and integrating with Naver Map
 
-    - name: 'Vite + React + Typescript + Tailwindcss + i18n Personal Project'
+    - name: Member Grade Process Change Development
+      position: 'GS Networks Co., Ltd.'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
+      date:
+        from: July 2020
+      descriptions:
+        - Changed the member grade change process, which previously operated with Legacy Batch Shell, to operate using Spring Batch
+
+    - name: Event Convenience Store Information API Development
+      position: 'GS Networks Co., Ltd.'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
+      date:
+        from: March 2020
+        to: April 2020
+      descriptions:
+        - DB design for providing store list for event execution
+
+    - name: Event Convenience Store Information Page Development
+      position: 'GS Networks Co., Ltd.'
+      tools: Vue.js
+      date:
+        from: March 2020
+        to: April 2020
+      descriptions:
+        - Development using Vue.js
+        - UI/UX design
+        - Discount coupon Barcode generation
+
+    - name: Convenience Store Information API Development
+      position: 'GS Networks Co., Ltd.'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
+      date:
+        from: January 2020
+        to: February 2020
+      descriptions:
+        - Providing information on convenience store pickup, half-price parcel, and domestic parcel availability
+        - Providing information on holidays and new opening dates
+        - ORM development using JPA and QueryDSL
+
+    - name: Website Maintenance
+      position: 'GS Networks Co., Ltd.'
+      tools: 'Spring MVC, eGovFramework, Maven, mybatis, IBM WebSphere'
+      date:
+        from: January 2020
+        to: February 2022
+      descriptions:
+        - Feature development according to business department requirements
+        - Deployment management after March 2021 through outsourcing contract
+
+    - name: Website CMS Maintenance
+      position: 'GS Networks Co., Ltd.'
+      tools: 'Spring MVC, eGovFramework, Maven, mybatis, IBM WebSphere'
+      date:
+        from: January 2020
+        to: February 2021
+      descriptions:
+        - Feature development according to business department requirements
+        - Deployment management after March 2021 through outsourcing contract
+
+    - name: Slack Bot
+      position: 'GS Networks Co., Ltd.'
+      date:
+        from: December 2019
+      descriptions:
+        - Automation of operational tasks using Slack Bot
+
+    - name: DevOps
+      position: 'GS Networks Co., Ltd. DevOps'
+      tools: 'Jenkins, Github Action, Docker, Docker Compose, IBM AIX, AWS, Portainer'
+      date:
+        from: September 2019
+        to: February 2022
+      descriptions:
+        - 'Version control: Git Branch policy management and user management'
+        - 'CI/CD: Jenkins, Github Action'
+        - Docker, Docker Compose
+        - IBM AIX, AWS, Portainer
+        - Jetbrains, Github, AWS, Parallels, DBSchema
+        - 'App development: Google Play Store, Apple App Store'
+        - 'Project collaboration: Slack'
+        - 'Project version control: Github'
+        - 'Project management: Jira'
+        - 'Project documentation: Notion, Confluence'
+
+    - name: Batch Management
+      position: 'GS Networks Co., Ltd.'
+      tools: 'Unix(IBM AIX), Crontab, Shell Script'
+      date:
+        from: September 2019
+        to: February 2022
+      descriptions:
+        - File-based data processing for large-scale data handling
+        - Batch program development using Shell Script
+        - Scheduling using Crontab
+        - Batch program development in IBM AIX environment
+        - Batch program logging and error handling
+        - Batch program monitoring
+
+    - name: Aman System Co., Ltd.
+      position: Full Stack Developer
+      tools: 'Node.js, Express.js, ejs, Vue.js, PWA'
+      date:
+        from: March 2019
+        to: September 2019
+      descriptions:
+        - Solo developer
+        - Created software for boarding school students to apply for outings and overnight stays
+        - Implemented Backend using Node.js and Express.js
+        - Implemented Frontend using Vue.js
+        - Developed as a Progressive Web App (PWA)
+      image: gohome.png
+
+    - name: A-Pad
+      position: 'Aman System Co., Ltd. Fullstack Developer'
+      tools: 'Node.js, Express.js, Vue.js, PWA'
+      date:
+        from: May 2019
+        to: June 2019
+      descriptions:
+        - Solo developer
+        - Worked on Frontend and Backend of A-Pad, a mobile attendance management software
+        - Implemented Backend using Node.js and Express.js
+        - Implemented Frontend using Vue.js
+        - Developed as a Progressive Web App (PWA)
+      image: apad.png
+
+    - name: Company Homepage
+      position: 'Aman System Co., Ltd. Fullstack Developer'
+      tools: 'Node.js, Express.js, ejs'
+      date:
+        from: March 2019
+        to: May 2019
+      descriptions:
+        - Solo developer
+        - Created Aman System Co., Ltd. homepage
+        - Renewed the existing homepage
+        - Implemented Backend using Node.js and Express.js
+        - Implemented Frontend using ejs
+      image: homepage.png
+
+portfolio:
+  title: Portfolio
+  contents:
+    - name: 'Next.js 14 Boilerplate Personal Project'
       position: 'Personal Project'
+      tools: 'Next.js, React, Typescript, Tailwindcss, Storybook'
       date:
-        from: Jan. 2024
-        to: Current
-      descriptions:
-        - Template project using Vite, React, Typescript, Tailwindcss, i18n
-        - Project github [https://github.com/0plan/vrtn]
-        - Deployment on Vercel [https://vrtn.0plan.dev/]
-        - Component Storybook using shadcn/ui[https://ui.shadcn.com]
-
-    - name: 'Next + React + Typescript + Tailwindcss Personal Project'
-      position: 'Personal Project'
-      date:
-        from: May. 2024
+        from: May 2024
         to: Current
       descriptions:
         - Template project using Next, React, Typescript, Tailwindcss
         - Project github [https://github.com/0plan/next-common]
-        - Deployment on Vercel [https://next.0plan.dev/]
-        - Component Storybook using shadcn/ui[https://ui.shadcn.com]
+        - Vercel deployment Demo [https://next.0plan.dev/]
+        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
 
-    - name: 'Vite + Vue.js + Typescript + Tailwindcss + i18n Personal Project'
+    - name: 'Vue3 Boilerplate Personal Project'
       position: 'Personal Project'
+      tools: 'Vite, Vue.js, Typescript, Tailwindcss, i18n'
       date:
-        from: May. 2024
+        from: May 2024
         to: Current
       descriptions:
         - Template project using Vite, Vue.js, Typescript, Tailwindcss, i18n
         - Project github [https://github.com/0plan/vue3-starter-template]
-        - Deployment on Vercel [https://vue.0plan.dev/]
-        - Component Storybook using shadcn/ui[https://ui.shadcn.com]
+        - Vercel deployment Demo [https://vue.0plan.dev/]
+        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
+
+    - name: 'React Boilerplate Personal Project'
+      position: 'Personal Project'
+      tools: 'Vite, React, Typescript, Tailwindcss, i18n'
+      date:
+        from: January 2024
+        to: Current
+      descriptions:
+        - Template project using Vite, React, Typescript, Tailwindcss, i18n
+        - Project github [https://github.com/0plan/vrtn]
+        - Vercel deployment Demo [https://vrtn.0plan.dev/]
+        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
+
+    - name: Grade Input Macro
+      position: 'Inha Technical College Work-Study Student'
+      tools: 'Autohotkey'
+      date:
+        from: November 2016
+      descriptions:
+        - Solo developer
+        - Developed for processing grade input tasks of old academic records in the academic affairs archive room
+        - Reduced the time required for inputting one page from 30 minutes to 1 minute
+        - Source [https://github.com/0plan/grade-macro]
+      image: autohotkey.png
+
+    - name: Have You Been Traveling?
+      position: 'Incheon Knowledge Industry Association'
+      tools: 'JAVA, JSP, Spring Framework, Oracle, Javascript, JQuery'
+      date:
+        from: July 2016
+        to: August 2016
+      descriptions:
+        - Team of 4 members
+        - Developed based on Spring Framework as the Final Project for Hybrid Web & App Developer course
+        - Designed the database and implemented Naver ID login (OAuth)
+        - Implemented display of preferred travel destinations by age group and gender based on recommendation count and post views upon login
+        - Implemented admin page using Bootstrap Dashboard
+      image: yhn.png
+
+    - name: Secretary Kim
+      position: 'Incheon Knowledge Industry Association'
+      tools: 'JAVA, JSP, Oracle, Cordova, JQuery, JQuery Mobile, Cordova, Google Map API, Kweather API'
+      date:
+        from: May 2016
+        to: June 2016
+      descriptions:
+        - Team of 4 members
+        - Participated in developing a schedule management Web App using Cordova as the Semi Project for Hybrid Web & App Developer course
+        - Implemented route finding using Google Map API and created a favorites feature by storing routes in the database
+        - Parsed XML to JSON using Kweather API
+      image: assistkim.png
 
 skill:
   title: Skills
@@ -367,100 +427,101 @@ skill:
     - title: Frontend
       items:
         - title: React
-          level: 4
+          level: 7
         - title: Vue
-          level: 4
+          level: 9
     - title: Backend
       items:
-        - title: Node.js Express
-          level: 4
+        - title: Node.js
+          level: 7
         - title: Java Spring Boot
-          level: 4
+          level: 8
     - title: Etc.
       items:
-       - title: Flutter
-         level: 2
-       - title: Typescript
-         level: 4
+        - title: Flutter
+          level: 3
+        - title: Typescript
+          level: 8
     - title: Database
       items:
         - title: Oracle
-          level: 4
+          level: 7
         - title: MySQL / MariaDB
-          level: 4
+          level: 7
         - title: MSSQL
-          level: 3
+          level: 6
     - title: DevOps
       items:
         - title: AWS / Azure / GCP
-          level: 3
+          level: 6
         - title: Docker
-          level: 4
+          level: 8
         - title: Jenkins / Github Actions
-          level: 4
+          level: 8
         - title: Git
-          level: 4
+          level: 8
         - title: Linux / Unix
-          level: 4
-    - title: Language
+          level: 8
+    - title: Languages
       items:
         - title: Korean
-          level: 5
+          level: 10
         - title: English
-          level: 3
+          level: 5
 
 experiences:
-  title: Experiences
+  title: Experience
   contents:
     - name: Abacus Software
       position: Frontend Developer
       date:
-        from: Mar. 2022
+        from: March 2022
         to: Current
 
     - name: GS Networks Co., Ltd.
-      position: Full Stack Developer
+      position: Full Stack Developer, DevOps
       date:
-        from: Jul. 2020
-        to: Feb. 2022
+        from: July 2020
+        to: February 2022
 
     - name: CVSnet Co., Ltd.
-      position: Full Stack Developer
+      position: Full Stack Developer, DevOps
       descriptions:
         - Merged with GS Networks Co., Ltd.
       date:
-        from: Sep. 2019
-        to: Jul. 2020
+        from: September 2019
+        to: July 2020
 
     - name: Aman System Co., Ltd.
       position: Full Stack Developer
       date:
-        from: Mar. 2019
-        to: Sep. 2019
+        from: March 2019
+        to: September 2019
 
 certificates:
-  title: Certificates
+  title: Awards and Certifications
   contents:
-    - name: Information Processing Engineer
-      position: Certificate
+    - name: Information Processing Industrial Engineer
+      position: Certification
       date:
-        from: Aug. 2017
+        from: August 2017
 
-    - name: Information Processing Technician
-      position: Certificate
+    - name: Information Processing Craftsman
+      position: Certification
       date:
-        from: Mar. 2017
+        from: March 2017
 
-    - name: Computer Application Ability 2nd Grade
-      position: Certificate
+    - name: Computer Literacy Level 2
+      position: Certification
       date:
-        from: Jan. 2017
+        from: January 2017
 
-    - name: 2016 Science and Technology Talent Competition (Computational Thinking Project) Bronze Medal
+    - name: 2016 Science and Technology Talent Competition (Computational Thinking Project) Bronze Award
       position: Award
       date:
-        from: Dec. 2016
+        from: December 2016
 
 update:
-  description: Last Modified at
-  date: 15. July. 2024
+  description: Last Updated
+  date: November 27, 2024
+  note: https://github.com/0plan/resume/commits/master

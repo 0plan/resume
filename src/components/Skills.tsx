@@ -35,7 +35,7 @@ const SkillProgress = ({ contents }: SkillProps) => {
           >
             <div className="space-y-5">
               <p className="text-sm font-medium leading-none">{skill.title}</p>
-              <Progress value={skill.level * 20} />
+              <Progress value={skill.level * 10} />
             </div>
           </div>
         ))}
