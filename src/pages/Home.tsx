@@ -15,7 +15,9 @@ export default function Home() {
       </Helmet>
       <div className="md:flex">
         <div className="md:w-1/2 xl:w-1/2">
-          <AboutMe />
+          <div className="w-full">
+            <AboutMe />
+          </div>
           <Information documents={t("education", { returnObjects: true })} />
         </div>
         <div className="md:w-1/2 xl:flex xl:w-full">

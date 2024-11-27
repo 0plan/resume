@@ -25,6 +25,9 @@ const AboutMe = () => {
             <div className="text-sky-500 dark:text-sky-400">
               {t("profile.name")}
             </div>
+            <div className="text-slate-700 dark:text-slate-500">
+              {t("profile.position")}
+            </div>
             <div className="text-slate-800 dark:text-slate-300 flex items-center underline">
               <Home className="w-4 h-4 mr-2" />
               <a target="_blank" href={t("profile.blog")}>
@@ -42,9 +45,6 @@ const AboutMe = () => {
               <a target="_blank" href={`mailto:${t("profile.email")}`}>
                 {t("profile.email")}
               </a>
-            </div>
-            <div className="text-slate-700 dark:text-slate-500">
-              {t("profile.position")}
             </div>
           </figcaption>
         </div>
