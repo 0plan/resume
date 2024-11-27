@@ -11,6 +11,7 @@ interface InformationProps {
     contents: {
       name: string;
       position?: string;
+      tools?: string;
       date: {
         from: string;
         to?: string;
@@ -45,6 +46,7 @@ const Information = ({ documents }: InformationProps) => {
               <div className="space-y-1">
                 <p className="font-medium leading-none">{item.name}</p>
                 <p className="text-sm font-bold">{item?.position}</p>
+                <p className="text-sm font-semibold">{item?.tools}</p>
                 <p className="text-sm text-muted-foreground">
                   {item.date.from} {item.date.to ? "- " + item.date.to : ""}
                 </p>

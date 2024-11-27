@@ -374,10 +374,12 @@ skill:
           level: 4
         - title: Java Spring Boot
           level: 4
-    - title: Mobile App
+    - title: Etc.
       items:
        - title: Flutter
          level: 2
+       - title: Typescript
+         level: 4
     - title: Database
       items:
         - title: Oracle

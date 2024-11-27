@@ -5,7 +5,8 @@ profile:
   email: chlee125@gmail.com
   position: Full Stack Developer
   description: 더욱 편하게 살기위해 개발하는 개발자
-#  blog: https://0plan.dev
+  blog: https://0plan.dev
+  github: https://github.com/0plan
 
 education:
   title: 교육
@@ -39,81 +40,237 @@ education:
       descriptions:
         - 졸업
 
-portfolio:
-  title: 포트폴리오
+careers:
+  title: 경력 기술서
   contents:
-    - name: 성적 입력 매크로
-      position: '인하공업전문대학, AutoHotKey'
+    - name: 'LG U+ 상품출시 지원 시스템 고도화 이용약관 프로젝트'
+      position: '(주)애버커스소프트웨어, Frontend 개발, SM, SI, PL'
+      tools: 'Vite, Vue3, Typescript'
       date:
-        from: 2016년 11월
-      descriptions:
-        - 학적부 보관실에서 구 학적자의 성적 입력 업무처리를 하기위해 개발 하였습니다.
-        - 한 페이지 입력에 30분 소요 되던 작업을 1분 으로 단축하였습니다.
-        - https://github.com/0plan/grade-macro
-      image: autohotkey.png
+        from: 2024년 11월
+        to: Current
 
-    - name: 김비서
-      position: '(사)인천지식산업협회, JAVA, JSP, Oracle, Cordova, JQuery, JQuery Mobile'
+    - name: 'LG U+ 상품출시 지원 시스템 고도화 모바일 유형화 프로젝트'
+      position: '(주)애버커스소프트웨어, Frontend 개발, PL'
+      tools: 'Vite, Vue3, Typescript'
       date:
-        from: 2016년 5월
-        to: 2016년 6월
-      descriptions:
-        - '참여인원: 4명'
-        - Hybrid Web & App 개발자 과정 Semi Project 로 Cordova 를 사용한 일정관리 Web App 개발에 참여하였습니다.
-        - Google Map API 를 이용하여 길 찾기를 구현 했으며, 경로를 데이터베이스에 저장하여 즐겨찾기를 구현하였습니다.
-        - 케이웨더 API 를 이용하여 XML을 JSON으로 파싱하였습니다.
-      image: assistkim.png
+        from: 2024년 08월
+        to: 2024년 10월
 
-    - name: 여행은 하고 다니니?
-      position: '(사)인천지식산업협회, JAVA, JSP, Spring Framework, Oracle, Javascript, JQuery'
+    - name: 'LG U+ 모바일 데이터팜 개발 지원'
+      position: '(주)애버커스소프트웨어'
+      tools: 'Vite, Vue3, Typescript'
       date:
-        from: 2016년 7월
-        to: 2016년 8월
-      descriptions:
-        - Hybrid Web & App 개발자 과정 Final Project 로 Spring Framework 를 기반으로 개발했습니다.
-        - 데이터베이스 설계를 하였고, 네이버 아이디 로그인(Oauth)을 구현하였습니다.
-        - 로그인 시 추천 수 및 게시글 조회수로 나이대, 성별 선호 여행지를 보여주도록 구현하였습니다.
-        - Bootstrap Dashboard 를 사용하여, 관리자 페이지를 구현하였습니다.
-      image: yhn.png
+        from: 2024년 03월
+        to: 2024년 09월
 
-    - name: 사내 홈페이지
-      position: '에이맨시스템(주), Node.js, Express.js'
+    - name: 'LG U+ 데이터팜 Customer 360 고도화 개발'
+      position: '(주)애버커스소프트웨어 Frontend 개발'
       date:
-        from: 2019년 3월
-        to: 2019년 5월
-      descriptions:
-        - 에이맨시스템(주) 홈페이지 제작을 하였습니다.
-        - 기존에 사용하던 홈페이지를 리뉴얼 하였습니다.
-        - Node.js 의 Express.js 를 Backend 로 구현 하였습니다.
-        - ejs 를 사용하여 Frontend 를 구현하였습니다.
-      image: homepage.png
+        from: 2023년 12월
+        to: 2024년 2월
 
-    - name: 에이패드
-      position: '에이맨시스템(주), Express.js, Vue.js, PWA'
+    - name: 'LG U+ 데이터팜 Customer 360 고도화 기획'
+      position: '(주)애버커스소프트웨어, 프로젝트 기획'
       date:
-        from: 2019년 5월
-        to: 2019년 6월
+        from: 2023년 10월
+        to: 2023년 12월
       descriptions:
-        - 모바일 출결관리 소프트웨어인 에이패드의 Frontend 및 Backend 를 작업하였습니다.
-        - Node.js 의 Express.js 를 Backend 로 구현 하였습니다.
-        - Vue.js 를 사용하여 Frontend 를 구현하였습니다.
-        - Progressive Web App (PWA) 으로 개발 되었습니다.
-      image: apad.png
+        - 기획서 작성
+        - 기능 명세서 작성
 
-    - name: 외출/외박 관리
-      position: '에이맨시스템(주), Express.js, Vue.js, PWA'
+    - name: 'LG U+ 상품출시 지원 시스템 운영'
+      position: '(주)애버커스소프트웨어, SM'
+      tools: 'Vite, Vue3, Typescript'
       date:
-        from: 2019년 6월
-        to: 2019년 7월
+        from: 2023년 10월
+        to: Current
+
+    - name: 'LG U+ 상품출시 지원 시스템'
+      position: '(주)애버커스소프트웨어, 기획, Frontend 개발, PL'
+      tools: 'Vite, Vue3, Typescript'
+      date:
+        from: 2023년 4월
+        to: 2023년 10월
       descriptions:
-        - 기숙사형 학교의 외출 및 외박을 신청할 수 있는 소프트웨어 제작 하였습니다.
-        - Node.js 의 Express.js 를 Backend 로 구현 하였습니다.
-        - Vue.js 를 사용하여 Frontend 를 구현하였습니다.
-        - Progressive Web App(PWA) 으로 개발 되었습니다.
-      image: gohome.png
+        - Frontend PL
+        - 프로젝트 내에서 공통으로 사용할 컴포넌트 개발
+
+    - name: 'LG U+ 서빙로봇 앱'
+      position: '(주)애버커스소프트웨어, 기획, Frontend 개발, PL'
+      tools: 'Vite, Vue3, Typescript'
+      date:
+        from: 2022년 12월
+        to: 2023년 3월
+      descriptions:
+        - Frontend PL
+        - 프로젝트 내에서 공통으로 사용할 컴포넌트 개발
+        - Apache eCharts 를 이용한 데이터 시각화
+        - mqtt 를 이용한 실시간 데이터 처리
+        - App 을 위한 Webview 개발
+        - Native App 동작 연동 개발
+
+    - name: 'LG U+ 데이터레이크'
+      position: '(주)애버커스소프트웨어, Frontend 개발'
+      tools: 'Nuxt, Vue2, Composition API'
+      date:
+        from: 2022년 6월
+        to: 2022년 12월
+      descriptions:
+        - 담당업무
+        - 빅데이터 가공을 위한 데이터 생성 페이지
+        - 데이터 시각화를 위한 통계 데이터 생성 페이지
+        - 대외비 처리를 위한 데이터 가공 페이지
+
+    - name: LG U+ AI
+      position: '(주)애버커스소프트웨어, Frontend 개발'
+      tools: 'Nuxt, Vue2, Composition API'
+      date:
+        from: 2022년 4월
+        to: 2022년 4월
+      descriptions:
+        - U+ 추천 AI 를 관리하기 위한 관리자 페이지
+
+    - name: LG U+ 로봇 관리 플랫폼
+      position: '(주)애버커스소프트웨어, Frontend 개발'
+      tools: 'Nuxt, Vue2'
+      date:
+        from: 2022년 3월
+        to: 2022년 5월
+      descriptions:
+        - 로봇 관리를 위한 사용자 페이지
+
+    - name: LG U+ 로봇 관제 플랫폼
+      position: '(주)애버커스소프트웨어, Frontend 개발'
+      tools: 'Nuxt, Vue2'
+      date:
+        from: 2022년 3월
+        to: 2022년 5월
+      descriptions:
+        - 로봇 제어를 위한 관리자 페이지
+
+    - name: 수지원넷 주소 정제 API 개발 진행
+      position: '(주)GS네트웍스'
+      tools: 'Java, Spring Boot, Gradle, JPA, QueryDSL'
+      date:
+        from: 2021년 12월
+      descriptions:
+        - 수지원넷 주소 정제 시스템을 이용한 주소 검색 시스템 개발
+
+    - name: 대한통운 주소 정제 API 개발
+      position: '(주)GS네트웍스'
+      tools: 'Java, Spring Boot, Gradle, JPA, QueryDSL'
+      date:
+        from: 2021년 11월
+        to: 2021년 12월
+      descriptions:
+        - 대한통운 주소 정제 API 연동
+        - 대한통운 주소 정제 API 연동을 위한 DB 설계
+
+    - name: 국내 택배 편의점 픽업 지도 개발
+      position: '(주)GS네트웍스'
+      tools: React.js, Express.js
+      date:
+        from: 2021년 10월
+      descriptions:
+        - 기존 반값 택배 UI/UX 에 국내 택배 편의점 픽업 API 연동 하여 개발
+
+    - name: 페이코 반값 택배 예약 서비스 개발 지원
+      position: '(주)GS네트웍스'
+      date:
+        from: 2021년 5월
+      descriptions:
+        - 페이코 앱 내 반값택배 예약 기능 추가에 따라 연동 프로세스 설명 및 개발 지원
+        - 2020년 2월에 개발한 편의점 정보 API 연동 지원
+
+    - name: 반값 택배 지도 개발
+      position: '(주)GS네트웍스'
+      tools: React.js, Express.js
+      date:
+        from: 2021년 3월
+      descriptions:
+        - UI/UX 및 프로세스 설계
+        - 페이코 앱 내 반값택배 예약 사용
+
+    - name: 네이버 지도 편의점 택배 접수 가능 여부 연동
+      position: '(주)GS네트웍스'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
+      date:
+        from: 2021년 1월
+        to: 2021년 2월
+      descriptions:
+        - 네이버 지도에 편의점 택배 접수 가능 여부 표시 연동
+        - 2020년 2월에 개발한 편의점 정보 API 에 기능을 추가하여 네이버 지도와 연동 하는 작업 진행
+
+    - name: 회원 등급 프로세스 변경에 따른 개발
+      position: '(주)GS네트웍스'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
+      date:
+        from: 2020년 7월
+      descriptions:
+        - 기존 Lagacy Batch Shell 로 동작하던 회원 등급 변경 프로세스를 Spring Batch 를 이용하여 동작하도록 변경
+
+    - name: 이벤트 편의점 정보 API 개발
+      position: '(주)GS네트웍스'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
+      date:
+        from: 2020년 3월
+        to: 2020년 4월
+      descriptions:
+        - 이벤트 진행을 위한 점포 목록 제공 DB 설계
+
+    - name: 이벤트 편의점 정보 페이지 개발
+      position: '(주)GS네트웍스'
+      tools: Vue.js
+      date:
+        from: 2020년 3월
+        to: 2020년 4월
+      descriptions:
+        - Vue.js 로 개발 진행
+        - UI/UX 설계
+        - 할인 쿠폰 Barcode 생성
+
+    - name: 편의점 정보 API 개발
+      position: '(주)GS네트웍스'
+      tools: Java, Spring Boot, Gradle, JPA, QueryDSL
+      date:
+        from: 2020년 1월
+        to: 2020년 2월
+      descriptions:
+        - 편의점 픽업, 반값택배, 국내택배 가능여부 정보 제공
+        - 휴무일 및 신규 개점일에 대한 정보 제공
+        - JPA 및 QueryDSL 을 이용한 ORM 개발 진행
+
+    - name: 홈페이지 유지보수
+      position: '(주)GS네트웍스'
+      tools: 'Spring MVC, eGovFramework, Maven, mybatis, IBM WebSphere'
+      date:
+        from: 2020년 1월
+        to: 2022년 2월
+      descriptions:
+        - 현업 부서 요구 사항에 따른 기능 개발
+        - 2021년 3월 이후 외주 용역 계약으로 이후 배포 관리 진행
+
+    - name: 홈페이지 CMS 유지보수
+      position: '(주)GS네트웍스'
+      tools: 'Spring MVC, eGovFramework, Maven, mybatis, IBM WebSphere'
+      date:
+        from: 2020년 1월
+        to: 2021년 2월
+      descriptions:
+        - 현업 부서 요구 사항에 따른 기능 개발
+        - 2021년 3월 이후 외주 용역 계약으로 이후 배포 관리 진행
+
+    - name: Slack Bot
+      position: '(주)GS네트웍스'
+      date:
+        from: 2019년 12월
+      descriptions:
+        - Slack Bot 을 이용한 운영 업무 자동화
 
     - name: DevOps
-      position: '(주)GS네트웍스, DevOps'
+      position: '(주)GS네트웍스 DevOps'
+      tools: 'Jenkins, Github Action, Docker, Docker Compose, IBM AIX, AWS, Portainer'
       date:
         from: 2019년 9월
         to: 2022년 2월
@@ -129,221 +286,68 @@ portfolio:
         - '프로젝트 관리: Jira'
         - '프로젝트 문서화: Notion, Confluence'
 
-    - name: Slack Bot
-      position: '(주)GS네트웍스'
-      date:
-        from: 2019년 12월
-      descriptions:
-        - Slack Bot 을 이용한 운영 업무 자동화
-
-    - name: 편의점 정보 API 개발
-      position: '(주)GS네트웍스, Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-        from: 2020년 1월
-        to: 2020년 2월
-      descriptions:
-        - 편의점 픽업, 반값택배, 국내택배 가능여부 정보 제공
-        - 휴무일 및 신규 개점일에 대한 정보 제공
-        - JPA 및 QueryDSL 을 이용한 ORM 개발 진행
-
-    - name: 편의점 정보 API 유지보수
-      position: '(주)GS네트웍스'
-      date:
-        from: 2020년 2월
-        to: 2022년 2월
-      descriptions:
-        - 개발 이후 필요한 기능 추가 및 유지보수 진행
-
-    - name: 이벤트 편의점 정보 API 개발
-      position: '(주)GS네트웍스, Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-        from: 2020년 3월
-        to: 2020년 4월
-      descriptions:
-        - 이벤트 진행을 위한 점포 목록 제공 DB 설계
-
-    - name: 이벤트 편의점 정보 페이지 개발
-      position: '(주)GS네트웍스, Vue.js'
-      date:
-        from: 2020년 3월
-        to: 2020년 4월
-      descriptions:
-        - Vue.js 로 개발 진행
-        - UI/UX 설계
-        - 할인 쿠폰 Barcode 생성
-
-    - name: 회원 등급 프로세스 변경에 따른 개발
-      position: '(주)GS네트웍스, Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: 2020년 7월
-      descriptions:
-          - 기존 Lagacy Batch Shell 로 동작하던 회원 등급 변경 프로세스를 Spring Batch 를 이용하여 동작하도록 변경
-
-    - name: 반값 택배 지도 개발
-      position: '(주)GS네트웍스, React.js, Express.js'
-      date:
-        from: 2021년 3월
-      descriptions:
-        - UI/UX 및 프로세스 설계
-        - 페이코 앱 내 반값택배 예약 사용
-
-    - name: 국내 택배 편의점 픽업 지도 개발
-      position: '(주)GS네트웍스, React.js, Express.js'
-      date:
-        from: 2021년 10월
-      descriptions:
-        - 기존 반값 택배 UI/UX 에 국내 택배 편의점 픽업 API 연동 하여 개발
-
-    - name: 네이버 지도 편의점 택배 접수 가능 여부 연동
-      position: '(주)GS네트웍스, Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-        from: 2021년 1월
-        to: 2021년 2월
-      descriptions:
-        - 네이버 지도에 편의점 택배 접수 가능 여부 표시 연동
-        - 2020년 2월에 개발한 편의점 정보 API 에 기능을 추가하여 네이버 지도와 연동 하는 작업 진행
-
-    - name: 페이코 반값 택배 예약 지원
-      position: '(주)GS네트웍스, Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: 2021년 5월
-      descriptions:
-        - 페이코 앱 내 반값택배 예약 기능 추가에 따라 연동 프로세스 설명 및 개발 지원
-        - 2020년 2월에 개발한 편의점 정보 API 연동 지원
-
-    - name: 대한통운 주소 정제 API 개발
-      position: '(주)GS네트웍스, Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: 2021년 11월
-          to: 2021년 12월
-      descriptions:
-        - 대한통운 주소 정제 API 연동
-        - 대한통운 주소 정제 API 연동을 위한 DB 설계
-
-    - name: 수지원넷 주소 정제 API 개발 진행
-      position: '(주)GS네트웍스, Java, Spring Boot, Gradle, JPA, QueryDSL'
-      date:
-          from: 2021년 12월
-      descriptions:
-        - 수지원넷 주소 정제 시스템을 이용한 주소 검색 시스템 개발
-
-    - name: 홈페이지 유지보수
-      position: '(주)GS네트웍스, Spring MVC, eGovFramework, Maven, mybatis'
-      date:
-        from: 2020년 1월
-        to: 2022년 2월
-      descriptions:
-        - 2021년 2월 까지 현업 부서 요구 사항에 따른 기능 개발
-        - 2021년 3월 이후 외주 용역 계약으로 이후 배포 관리 진행
-
-    - name: 홈페이지 CMS 유지보수
-      position: '(주)GS네트웍스, Spring MVC, eGovFramework, Maven, mybatis'
-      date:
-        from: 2020년 1월
-        to: 2022년 2월
-      descriptions:
-        - 2021년 2월 까지 현업 부서 요구 사항에 따른 기능 개발
-        - 2021년 3월 이후 외주 용역 계약으로 이후 배포 관리 진행
-
     - name: 배치관리
-      position: '(주)GS네트웍스, Unix(IBM AIX), Crontab, Shell Script'
+      position: '(주)GS네트웍스'
+      tools: 'Unix(IBM AIX), Crontab, Shell Script'
       date:
         from: 2019년 9월
         to: 2022년 2월
       descriptions:
         - 대용량 데이터 처리를 위한 파일 기반 데이터 처리
+        - Shell Script 를 이용한 배치 프로그램 개발
+        - Crontab 을 이용한 스케줄링
+        - IBM AIX 환경에서의 배치 프로그램 개발
+        - 배치 프로그램 로그 및 오류 처리
+        - 배치 프로그램 모니터링
 
-    - name: LG U+ 로봇 관리 플랫폼
-      position: '애버커스소프트웨어, Nuxt, Vue2'
+    - name: 에이맨시스템(주)
+      position: Full Stack Developer
+      tools: 'Node.js, Express.js, ejs, Vue.js, PWA'
       date:
-        from: 2022년 3월
-        to: 2022년 5월
+          from: 2019년 3월
+          to: 2019년 9월
       descriptions:
-        - 로봇 관리를 위한 사용자 페이지
+        - 참여인원 1명
+        - 기숙사형 학교의 외출 및 외박을 신청할 수 있는 소프트웨어 제작 하였습니다.
+        - Node.js 의 Express.js 를 Backend 로 구현 하였습니다.
+        - Vue.js 를 사용하여 Frontend 를 구현하였습니다.
+        - Progressive Web App(PWA) 으로 개발 되었습니다.
+      image: gohome.png
 
-    - name: LG U+ 로봇 관제 플랫폼
-      position: '애버커스소프트웨어, Nuxt, Vue2'
+    - name: 에이패드
+      position: '에이맨시스템(주) Fullstack Developer'
+      tools: 'Node.js, Express.js, Vue.js, PWA'
       date:
-        from: 2022년 3월
-        to: 2022년 5월
+        from: 2019년 5월
+        to: 2019년 6월
       descriptions:
-        - 로봇 제어를 위한 관리자 페이지
+        - 참여인원 1명
+        - 모바일 출결관리 소프트웨어인 에이패드의 Frontend 및 Backend 를 작업하였습니다.
+        - Node.js 의 Express.js 를 Backend 로 구현 하였습니다.
+        - Vue.js 를 사용하여 Frontend 를 구현하였습니다.
+        - Progressive Web App (PWA) 으로 개발 되었습니다.
+      image: apad.png
 
-    - name: LG U+ AI
-      position: '애버커스소프트웨어, Nuxt, Vue2, Composition API'
+    - name: 사내 홈페이지
+      position: '에이맨시스템(주) Fullstack Developer'
+      tools: 'Node.js, Express.js, ejs'
       date:
-        from: 2022년 4월
-        to: 2022년 4월
+        from: 2019년 3월
+        to: 2019년 5월
       descriptions:
-        - U+ 추천 AI 를 관리하기 위한 관리자 페이지
+        - 참여인원 1명
+        - 에이맨시스템(주) 홈페이지 제작을 하였습니다.
+        - 기존에 사용하던 홈페이지를 리뉴얼 하였습니다.
+        - Node.js 의 Express.js 를 Backend 로 구현 하였습니다.
+        - ejs 를 사용하여 Frontend 를 구현하였습니다.
+      image: homepage.png
 
-    - name: 'LG U+ 데이터레이크'
-      position: '애버커스소프트웨어, Nuxt, Vue2, Composition API'
-      date:
-        from: 2022년 6월
-        to: 2022년 12월
-      descriptions:
-        - 담당업무
-        - 빅데이터 가공을 위한 데이터 생성 페이지
-        - 데이터 시각화를 위한 통계 데이터 생성 페이지
-        - 대외비 처리를 위한 데이터 가공 페이지
-
-    - name: 'LG U+ 서빙로봇 앱'
-      position: '애버커스소프트웨어, Vite, Vue3, Typescript'
-      date:
-        from: 2022년 12월
-        to: 2023년 3월
-      descriptions:
-        - Frontend PL
-        - 프로젝트 내에서 공통으로 사용할 컴포넌트 개발
-        - Apache eCharts 를 이용한 데이터 시각화
-        - mqtt 를 이용한 실시간 데이터 처리
-        - App 을 위한 Webview 개발
-        - Native App 동작 연동 개발
-
-    - name: 'LG U+ 상품출시 지원 시스템'
-      position: '애버커스소프트웨어, Vite, Vue3, Typescript'
-      date:
-        from: 2022년 4월
-        to: 2023년 10월
-      descriptions:
-        - Frontend PL
-        - 프로젝트 내에서 공통으로 사용할 컴포넌트 개발
-
-    - name: 'LG U+ 상품출시 지원 시스템 운영'
-      position: '애버커스소프트웨어, Vite, Vue3, Typescript'
-      date:
-        from: 2023년 10월
-        to: Current
-
-    - name: 'LG U+ 데이터팜 Customer 360 고도화 기획'
-      position: '애버커스소프트웨어, 기획'
-      date:
-        from: 2023년 10월
-        to: 2023년 12월
-      descriptions:
-        - 기획서 작성
-        - 기능 명세서 작성
-
-    - name: 'LG U+ 데이터팜 Customer 360 고도화 개발'
-      position: '애버커스소프트웨어'
-      date:
-        from: 2023년 12월
-        to: 2024년 2월
-
-    - name: 'Vite + React + Typescript + Tailwindcss + i18n 개인 프로젝트'
+portfolio:
+  title: 포트폴리오
+  contents:
+    - name: 'Next.js 14 Boilerplate 개인 프로젝트'
       position: '개인 프로젝트'
-      date:
-        from: 2024년 1월
-        to: Current
-      descriptions:
-        - Vite, React, Typescript, Tailwindcss, i18n 을 사용한 템플릿 프로젝트
-        - 프로젝트 github [https://github.com/0plan/vrtn]
-        - Vercel 배포 Demo[https://vrtn.0plan.dev/]
-        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
-
-    - name: 'Next + React + Typescript + Tailwindcss 개인 프로젝트'
-      position: '개인 프로젝트'
+      tools: 'Next.js, React, Typescript, Tailwindcss, Storybook'
       date:
         from: 2024년 5월
         to: Current
@@ -353,8 +357,9 @@ portfolio:
         - Vercel 배포 Demo[https://next.0plan.dev/]
         - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
 
-    - name: 'Vite + Vue.js + Typescript + Tailwindcss + i18n 개인 프로젝트'
+    - name: 'Vue3 Boilerplate 개인 프로젝트'
       position: '개인 프로젝트'
+      tools: 'Vite, Vue.js, Typescript, Tailwindcss, i18n'
       date:
         from: 2024년 5월
         to: Current
@@ -363,6 +368,57 @@ portfolio:
         - 프로젝트 github [https://github.com/0plan/vue3-starter-template]
         - Vercel 배포 Demo[https://vue.0plan.dev/]
         - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
+
+    - name: 'React Boilerplate 개인 프로젝트'
+      position: '개인 프로젝트'
+      tools: 'Vite, React, Typescript, Tailwindcss, i18n'
+      date:
+        from: 2024년 1월
+        to: Current
+      descriptions:
+        - Vite, React, Typescript, Tailwindcss, i18n 을 사용한 템플릿 프로젝트
+        - 프로젝트 github [https://github.com/0plan/vrtn]
+        - Vercel 배포 Demo[https://vrtn.0plan.dev/]
+        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
+
+    - name: 성적 입력 매크로
+      position: '인하공업전문대학 근로장학생'
+      tools: 'Autohotkey'
+      date:
+        from: 2016년 11월
+      descriptions:
+        - 참여인원 1명
+        - 학적부 보관실에서 구 학적자의 성적 입력 업무처리를 하기위해 개발 하였습니다.
+        - 한 페이지 입력에 30분 소요 되던 작업을 1분 으로 단축하였습니다.
+        - source[https://github.com/0plan/grade-macro]
+      image: autohotkey.png
+
+    - name: 여행은 하고 다니니?
+      position: '(사)인천지식산업협회'
+      tools: 'JAVA, JSP, Spring Framework, Oracle, Javascript, JQuery'
+      date:
+        from: 2016년 7월
+        to: 2016년 8월
+      descriptions:
+        - 참여인원 4명
+        - Hybrid Web & App 개발자 과정 Final Project 로 Spring Framework 를 기반으로 개발했습니다.
+        - 데이터베이스 설계를 하였고, 네이버 아이디 로그인(Oauth)을 구현하였습니다.
+        - 로그인 시 추천 수 및 게시글 조회수로 나이대, 성별 선호 여행지를 보여주도록 구현하였습니다.
+        - Bootstrap Dashboard 를 사용하여, 관리자 페이지를 구현하였습니다.
+      image: yhn.png
+
+    - name: 김비서
+      position: '(사)인천지식산업협회'
+      tools: 'JAVA, JSP, Oracle, Cordova, JQuery, JQuery Mobile, Cordova, Google Map API, 케이웨더 API'
+      date:
+        from: 2016년 5월
+        to: 2016년 6월
+      descriptions:
+        - 참여인원 4명
+        - Hybrid Web & App 개발자 과정 Semi Project 로 Cordova 를 사용한 일정관리 Web App 개발에 참여하였습니다.
+        - Google Map API 를 이용하여 길 찾기를 구현 했으며, 경로를 데이터베이스에 저장하여 즐겨찾기를 구현하였습니다.
+        - 케이웨더 API 를 이용하여 XML을 JSON으로 파싱하였습니다.
+      image: assistkim.png
 
 skill:
   title: Skills
@@ -375,14 +431,17 @@ skill:
           level: 4
     - title: Backend
       items:
-        - title: Node.js Express
+        - title: Node.js
           level: 4
         - title: Java Spring Boot
           level: 4
-    - title: Mobile App
+    - title: Etc.
       items:
         - title: Flutter
           level: 2
+        - title: Typescript
+          level: 4
+
     - title: Database
       items:
         - title: Oracle
@@ -413,20 +472,20 @@ skill:
 experiences:
   title: 경력
   contents:
-    - name: 애버커스 소프트웨어
+    - name: 애버커스소프트웨어
       position: Frontend Developer
       date:
         from: 2022년 3월
         to: Current
 
     - name: (주)GS네트웍스
-      position: Full Stack Developer
+      position: Full Stack Developer, DevOps
       date:
         from: 2020년 7월
         to: 2022년 2월
 
     - name: CVSnet(주)
-      position: Full Stack Developer
+      position: Full Stack Developer, DevOps
       descriptions:
         - (주)GS네트웍스 합병
       date:
@@ -464,4 +523,5 @@ certificates:
 
 update:
   description: 수정일자
-  date: 2024년 7월 15일
+  date: 2024년 11월 27일
+  note: https://github.com/0plan/resume/commits/master/

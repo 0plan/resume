@@ -10,7 +10,7 @@ const Header = () => {
   const { toggleLang } = useLanguage();
 
   return (
-    <header className="z-50 flex w-full flex-wrap justify-start py-4 text-sm ">
+    <header className="sticky top-0 flex h-16 items-center justify-between gap-2 px-4 border-b z-50 backdrop-blur">
       <nav
         className="mx-auto flex w-full max-w-[85rem] items-center justify-between px-4"
         aria-label="Global"

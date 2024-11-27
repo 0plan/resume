@@ -2,12 +2,17 @@ import Skills from "@/components/Skills.tsx";
 import AboutMe from "@/components/AboutMe.tsx";
 import Information from "@/components/Information.tsx";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <div>
+      <Helmet>
+        <title>Fullstack Developer | 0plan</title>
+        <meta name="description" content="Fullstack Developer Resume - 0plan" />
+      </Helmet>
       <div className="md:flex">
         <div className="md:w-1/2 xl:w-1/2">
           <AboutMe />
@@ -19,6 +24,7 @@ export default function Home() {
               documents={t("experiences", { returnObjects: true })}
             />
           </div>
+
           <div className="md:pl-2 xl:w-full">
             <Information
               documents={t("certificates", { returnObjects: true })}
@@ -27,6 +33,7 @@ export default function Home() {
         </div>
       </div>
       <Skills />
+      <Information documents={t("careers", { returnObjects: true })} />
       <Information documents={t("portfolio", { returnObjects: true })} />
     </div>
   );
