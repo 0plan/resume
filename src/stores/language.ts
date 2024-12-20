@@ -6,6 +6,8 @@ type Language = {
   toggleLang: () => void
 }
 
+type Locale = 'en' | 'ko';
+
 const localesMap = Object.fromEntries(
   Object.entries(import.meta.glob('/public/locales/*.yml')).map(
     ([path, loadLocale]) => [path.match(/([\w-]*)\.yml$/)?.[1], loadLocale],

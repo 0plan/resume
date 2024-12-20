@@ -1,29 +1,21 @@
-import {useState} from "react";
+import { useDarkMode } from "@/lib/dark-mode.ts";
+import { Sun, Moon } from "lucide-react";
 
 const ToggleDarkMode = () => {
-    const [darkMode, setDarkMode] = useState(false);
+  const { toggle, isDarkMode } = useDarkMode();
 
-    const handleDarkMode = () => {
-        document.documentElement.classList.toggle("dark");
-        setDarkMode(!darkMode);
-        localStorage.setItem('theme', darkMode ? 'light' : 'dark')
-    }
+  return (
+    <button
+      onClick={toggle}
+      className="flex items-center justify-center p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
+    >
+      {isDarkMode ? (
+        <Sun className="text-yellow-500" />
+      ) : (
+        <Moon className="text-gray-500" />
+      )}
+    </button>
+  );
+};
 
-    return (
-        <label className="relative inline-flex items-center cursor-pointer">
-            <input
-                type="checkbox"
-                className="sr-only peer"
-                onClick={handleDarkMode}
-                checked={localStorage.getItem("theme") == "dark"}
-            />
-            <div
-                className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-            <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-          다크 모드 {localStorage.getItem("theme") == "dark" ? "On" : "Off"}
-        </span>
-        </label>
-    )
-}
-
-export default ToggleDarkMode
+export default ToggleDarkMode;
