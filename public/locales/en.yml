@@ -44,13 +44,6 @@ education:
 careers:
   title: Career History
   contents:
-    - name: 'LG U+ Product Launch Support System Enhancement - Terms of Service Project'
-      position: 'Abacus Software Co., Ltd., Frontend Development, SM, SI, PL'
-      tools: 'Vite, Vue3, Typescript'
-      date:
-        from: November 2024
-        to: Current
-
     - name: 'LG U+ Product Launch Support System Enhancement - Mobile Typification Project'
       position: 'Abacus Software Co., Ltd., Frontend Development, PL'
       tools: 'Vite, Vue3, Typescript'
@@ -85,7 +78,7 @@ careers:
       tools: 'Vite, Vue3, Typescript'
       date:
         from: October 2023
-        to: Current
+        to: December 2024
 
     - name: 'LG U+ Product Launch Support System'
       position: 'Abacus Software Co., Ltd., Planning, Frontend Development, PL'
@@ -476,7 +469,7 @@ experiences:
       position: Frontend Developer
       date:
         from: March 2022
-        to: Current
+        to: January 2025
 
     - name: GS Networks Co., Ltd.
       position: Full Stack Developer, DevOps
@@ -523,5 +516,5 @@ certificates:
 
 update:
   description: Last Updated
-  date: November 27, 2024
+  date: February 04, 2025
   note: https://github.com/0plan/resume/commits/master
