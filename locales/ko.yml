@@ -44,13 +44,6 @@ education:
 careers:
   title: 경력 기술서
   contents:
-    - name: 'LG U+ 상품출시 지원 시스템 고도화 이용약관 프로젝트'
-      position: '(주)애버커스소프트웨어, Frontend 개발, SM, SI, PL'
-      tools: 'Vite, Vue3, Typescript'
-      date:
-        from: 2024년 11월
-        to: Current
-
     - name: 'LG U+ 상품출시 지원 시스템 고도화 모바일 유형화 프로젝트'
       position: '(주)애버커스소프트웨어, Frontend 개발, PL'
       tools: 'Vite, Vue3, Typescript'
@@ -85,7 +78,7 @@ careers:
       tools: 'Vite, Vue3, Typescript'
       date:
         from: 2023년 10월
-        to: Current
+        to: 2024년 12월
 
     - name: 'LG U+ 상품출시 지원 시스템'
       position: '(주)애버커스소프트웨어, 기획, Frontend 개발, PL'
@@ -476,7 +469,7 @@ experiences:
       position: Frontend Developer
       date:
         from: 2022년 3월
-        to: Current
+        to: 2025년 1월
 
     - name: (주)GS네트웍스
       position: Full Stack Developer, DevOps
@@ -523,5 +516,5 @@ certificates:
 
 update:
   description: 수정일자
-  date: 2024년 11월 27일
+  date: 2025년 02월 04일
   note: https://github.com/0plan/resume/commits/master/
