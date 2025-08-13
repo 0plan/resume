@@ -4,7 +4,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./index.tsx";
 import "@/lib/dark-mode.ts";
-import { HelmetProvider } from "react-helmet-async";
 import "@/lib/locales";
 import Home from "@/pages/Home.tsx";
 
@@ -23,8 +22,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <RouterProvider router={router} />
-    </HelmetProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );

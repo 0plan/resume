@@ -6,7 +6,7 @@ const AboutMe = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="rounded shadow mt-3">
+    <div className="rounded shadow-sm mt-3">
       <figure className="rounded-xl bg-slate-100 p-4 md:flex md:p-0 dark:bg-slate-800">
         <img
           className="mx-auto h-24 w-24 rounded-full md:h-auto md:w-48 md:rounded-xl"
