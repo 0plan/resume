@@ -10,9 +10,9 @@ const Header = () => {
   const { toggleLang } = useLanguage();
 
   return (
-    <header className="sticky top-0 flex h-16 items-center justify-between gap-2 px-4 border-b z-50 backdrop-blur">
+    <header className="sticky top-0 flex h-16 items-center justify-between gap-2 px-4 border-b z-50 backdrop-blur-sm">
       <nav
-        className="mx-auto flex w-full max-w-[85rem] items-center justify-between px-4"
+        className="mx-auto flex w-full max-w-340 items-center justify-between px-4"
         aria-label="Global"
       >
         <Link to="/resume" className="text-xl font-semibold">

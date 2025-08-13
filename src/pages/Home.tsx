@@ -2,17 +2,16 @@ import Skills from "@/components/Skills.tsx";
 import AboutMe from "@/components/AboutMe.tsx";
 import Information from "@/components/Information.tsx";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <div>
-      <Helmet>
+      <article>
         <title>Fullstack Developer | 0plan</title>
         <meta name="description" content="Fullstack Developer Resume - 0plan" />
-      </Helmet>
+      </article>
       <div className="md:flex">
         <div className="md:w-1/2 xl:w-1/2">
           <div className="w-full">
