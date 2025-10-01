@@ -1,55 +1,48 @@
 import { useTranslation } from "react-i18next";
 import avatar from "@/assets/img/avatar.jfif";
 import { Github, Home, Mail } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card.tsx";
 
 const AboutMe = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="rounded shadow-sm mt-3">
-      <figure className="rounded-xl bg-slate-100 p-4 md:flex md:p-0 dark:bg-slate-800">
-        <img
-          className="mx-auto h-24 w-24 rounded-full md:h-auto md:w-48 md:rounded-xl"
-          src={avatar}
-          alt={t("profile.name")}
-          width="384"
-          height="512"
-        />
-        <div className="text-center md:text-left md:mx-4 flex flex-wrap items-center justify-center">
-          <figcaption className="font-medium">
-            <blockquote>
-              <p className="text-lg font-medium text-slate-900 dark:text-slate-100">
-                {t("profile.description")}
-              </p>
-            </blockquote>
-            <div className="text-sky-500 dark:text-sky-400">
-              {t("profile.name")}
-            </div>
-            <div className="text-slate-700 dark:text-slate-500">
-              {t("profile.position")}
-            </div>
-            <div className="text-slate-800 dark:text-slate-300 flex items-center underline">
-              <Home className="w-4 h-4 mr-2" />
-              <a target="_blank" href={t("profile.blog")}>
-                {t("profile.blog")}
-              </a>
-            </div>
-            <div className="text-slate-800 dark:text-slate-300 flex items-center underline flex-1">
-              <Github className="w-4 h-4 mr-2" />
-              <a target="_blank" href={t("profile.github")}>
-                {t("profile.github")}
-              </a>
-            </div>
-            <div className="text-slate-800 dark:text-slate-300 flex items-center underline flex-1">
-              <Mail className="w-4 h-4 mr-2" />
-              <a target="_blank" href={`mailto:${t("profile.email")}`}>
-                {t("profile.email")}
-              </a>
-            </div>
-          </figcaption>
+    <Card>
+      <div className="md:flex">
+        <div className="md:w-1/3 flex justify-center items-center p-4">
+          <img
+            className="mx-auto h-32 w-32 rounded-full md:h-48 md:w-48 md:rounded-xl object-cover"
+            src={avatar}
+            alt={t("profile.name")}
+          />
         </div>
-      </figure>
-    </div>
+        <div className="md:w-2/3">
+          <CardHeader>
+            <CardTitle className="text-2xl font-bold">{t("profile.name")}</CardTitle>
+            <p className="text-sm text-muted-foreground">{t("profile.position")}</p>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <p className="text-base text-muted-foreground">
+              {t("profile.description")}
+            </p>
+            <div className="flex items-center space-x-4">
+              <a target="_blank" href={t("profile.blog")} className="flex items-center text-sm text-primary hover:underline">
+                <Home className="w-4 h-4 mr-1" />
+                Blog
+              </a>
+              <a target="_blank" href={t("profile.github")} className="flex items-center text-sm text-primary hover:underline">
+                <Github className="w-4 h-4 mr-1" />
+                GitHub
+              </a>
+              <a target="_blank" href={`mailto:${t("profile.email")}`} className="flex items-center text-sm text-primary hover:underline">
+                <Mail className="w-4 h-4 mr-1" />
+                Email
+              </a>
+            </div>
+          </CardContent>
+        </div>
+      </div>
+    </Card>
   );
 };
 export default AboutMe;
