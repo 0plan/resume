@@ -7,12 +7,13 @@ const ToggleDarkMode = () => {
   return (
     <button
       onClick={toggle}
-      className="flex items-center justify-center p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
+      aria-label={isDarkMode ? "Toggle light mode" : "Toggle dark mode"}
+      className="flex items-center justify-center p-2 rounded-full bg-secondary dark:bg-secondary hover:bg-muted dark:hover:bg-muted transition-colors duration-300"
     >
       {isDarkMode ? (
-        <Sun className="text-yellow-500" />
+        <Sun className="text-primary" />
       ) : (
-        <Moon className="text-gray-500" />
+        <Moon className="text-foreground" />
       )}
     </button>
   );

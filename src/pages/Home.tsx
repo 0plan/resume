@@ -1,3 +1,4 @@
+import Timeline from "@/components/Timeline.tsx";
 import Skills from "@/components/Skills.tsx";
 import AboutMe from "@/components/AboutMe.tsx";
 import Information from "@/components/Information.tsx";
@@ -12,30 +13,27 @@ export default function Home() {
         <title>Fullstack Developer | 0plan</title>
         <meta name="description" content="Fullstack Developer Resume - 0plan" />
       </article>
-      <div className="md:flex">
-        <div className="md:w-1/2 xl:w-1/2">
-          <div className="w-full">
-            <AboutMe />
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-4">
+          <AboutMe />
           <Information documents={t("education", { returnObjects: true })} />
         </div>
-        <div className="md:w-1/2 xl:flex xl:w-full">
-          <div className="md:pl-2 xl:w-full">
-            <Information
-              documents={t("experiences", { returnObjects: true })}
-            />
-          </div>
-
-          <div className="md:pl-2 xl:w-full">
-            <Information
-              documents={t("certificates", { returnObjects: true })}
-            />
-          </div>
+        <div className="space-y-4">
+          <Timeline documents={t("experiences", { returnObjects: true })} />
+          <Information
+            documents={t("certificates", { returnObjects: true })}
+          />
+        </div>
+        <div className="md:col-span-2">
+          <Skills />
+        </div>
+        <div className="md:col-span-2">
+          <Information documents={t("careers", { returnObjects: true })} />
+        </div>
+        <div className="md:col-span-2">
+          <Information documents={t("portfolio", { returnObjects: true })} />
         </div>
       </div>
-      <Skills />
-      <Information documents={t("careers", { returnObjects: true })} />
-      <Information documents={t("portfolio", { returnObjects: true })} />
     </div>
   );
 }
