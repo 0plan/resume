@@ -44,6 +44,25 @@ education:
 careers:
   title: 경력 기술서
   contents:
+    - name: '현대 글로비스 맥시코 ITMS 기능 개선 프로젝트'
+      position: '프리랜서, 웹투게더, Frontend 개발, Backend 개발, Oracle Database'
+      tools: 'Vite, Vue3, Typescript, Java, Spring Boot, Oracle'
+      date:
+        from: 2025년 09월
+        to: 2025년 12월
+      descriptions:
+        - 풀스택 개발
+        - Oracle Procedure, cursor 사용
+
+    - name: '위로보틱스 로봇 매뉴얼 웹페이지 제작'
+      position: '위로보틱스, Frontend 개발'
+      tools: 'Next.js, React, Typescript, i18n'
+      date:
+          from: 2025년 02월
+          to: 2025년 04월
+      descriptions:
+        - Next.js, React, Typescript 를 이용한 로봇 매뉴얼 웹페이지 제작
+
     - name: 'LG U+ 상품출시 지원 시스템 고도화 모바일 유형화 프로젝트'
       position: '(주)애버커스소프트웨어, Frontend 개발, PL'
       tools: 'Vite, Vue3, Typescript'
@@ -465,6 +484,18 @@ skill:
 experiences:
   title: 경력
   contents:
+    - name: 프리랜서
+      position: Full Stack Developer
+      date:
+        from: 2025년 9월
+        to: Current
+
+    - name: 위로보틱스
+      position: Frontend Developer
+      date:
+        from: 2025년 2월
+        to: 2025년 4월
+
     - name: 애버커스소프트웨어
       position: Frontend Developer
       date:
@@ -516,5 +547,5 @@ certificates:
 
 update:
   description: 수정일자
-  date: 2025년 02월 04일
+  date: 2025년 12월 08일
   note: https://github.com/0plan/resume/commits/master/
