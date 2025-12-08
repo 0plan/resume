@@ -44,6 +44,25 @@ education:
 careers:
   title: Career History
   contents:
+    - name: 'Hyundai Glovis Mexico ITMS Function Improvement Project'
+      position: 'Freelancer, WebTogether, Frontend Development, Backend Development, Oracle Database'
+      tools: 'Vite, Vue3, Typescript, Java, Spring Boot, Oracle'
+      date:
+        from: September 2025
+        to: December 2025
+      descriptions:
+        - Fullstack Development
+        - Use of Oracle Procedure, cursor
+
+    - name: 'Wirobotics robot manual webpage production'
+      position: 'Wirobotics, Frontend Development'
+      tools: 'Next.js, React, Typescript, i18n'
+      date:
+        from: February 2025
+        to: April 2025
+      descriptions:
+        - Created robot manual webpage using Next.js, React, Typescript
+
     - name: 'LG U+ Product Launch Support System Enhancement - Mobile Typification Project'
       position: 'Abacus Software Co., Ltd., Frontend Development, PL'
       tools: 'Vite, Vue3, Typescript'
@@ -465,6 +484,18 @@ skill:
 experiences:
   title: Experience
   contents:
+    - name: Freelancer
+      position: Full Stack Developer
+      date:
+        from: September 2025
+        to: Current
+
+    - name: Wirobotics
+      position: Frontend Developer
+      date:
+        from: February 2025
+        to: April 2025
+
     - name: Abacus Software
       position: Frontend Developer
       date:
@@ -516,5 +547,5 @@ certificates:
 
 update:
   description: Last Updated
-  date: February 04, 2025
+  date: December 08, 2025
   note: https://github.com/0plan/resume/commits/master
