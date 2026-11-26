@@ -20,6 +20,19 @@ jobs:
       - run: pnpm exec tsc --noEmit
       - run: pnpm run build
       - run: test -s dist/static/ko.html && test -s dist/static/en.html && test -s dist/sitemap.xml
+      - name: Install browser test dependency if not yet locked
+        run: |
+          if ! node -e "require.resolve('@playwright/test')"; then pnpm add -D @playwright/test; fi
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm exec playwright test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: resume-test-report
+          path: |
+            playwright-report
+            test-results
+          if-no-files-found: ignore
       - uses: actions/upload-artifact@v4
         with:
           name: resume-preview

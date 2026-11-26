@@ -20,7 +20,7 @@ const SkillCategory = ({ title, items }: IContent) => (
 
 const Skills = () => {
   const { t } = useTranslation();
-  const skillContents: IContent[] = t("skill.contents", { returnObjects: true });
+  const skillContents = t("skill.contents", { returnObjects: true }) as unknown as IContent[];
 
   return (
     <section>

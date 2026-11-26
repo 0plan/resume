@@ -7,12 +7,13 @@ const Footer = () => {
   return (
     <footer className="mx-auto w-full max-w-340 px-4 py-10 sm:px-6 lg:px-8">
       <div className="text-center">
+        <nav className="mb-3 flex justify-center gap-4 text-sm underline" aria-label="Static resume"><a href={`${import.meta.env.BASE_URL}/static/ko.html`.replace(/([^:]\/)\//g, "$1")}>한국어 HTML</a><a href={`${import.meta.env.BASE_URL}/static/en.html`.replace(/([^:]\/)\//g, "$1")}>English HTML</a></nav>
         <span className="text-sm text-muted-foreground sm:text-center">
           {t("update.description")} {t("update.date")}
         </span>
         <a
           href={t("update.note")}
-          target="_blank"
+          target="_blank" rel="noreferrer"
           className="flex justify-center items-center"
         >
           <div className="border rounded-full mr-2 border-foreground p-1">

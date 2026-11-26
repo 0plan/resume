@@ -72,3 +72,5 @@
   section .divide-y > div { break-inside: avoid; }
   a { color: #111 !important; text-decoration: underline; }
 }
+
+@layer base { a { overflow-wrap: anywhere; } }
