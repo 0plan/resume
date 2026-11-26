@@ -61,3 +61,14 @@
     word-break: keep-all;
   }
 }
+
+@media print {
+  @page { size: A4; margin: 13mm; }
+  :root, .dark { --background: white; --foreground: #111; --muted: #f5f5f5; --muted-foreground: #444; --border: #ccc; }
+  body { font-size: 10pt; background: white; color: #111; }
+  header, footer, .print-hidden { display: none !important; }
+  main { margin: 0 !important; padding: 0 !important; max-width: none !important; }
+  section h2, section h3 { break-after: avoid; }
+  section .divide-y > div { break-inside: avoid; }
+  a { color: #111 !important; text-decoration: underline; }
+}
