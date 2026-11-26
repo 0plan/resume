@@ -8,12 +8,12 @@ const ToggleDarkMode = () => {
     <button
       onClick={toggle}
       aria-label={isDarkMode ? "Toggle light mode" : "Toggle dark mode"}
-      className="flex items-center justify-center p-2 rounded-full bg-secondary dark:bg-secondary hover:bg-muted dark:hover:bg-muted transition-colors duration-300"
+      className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
     >
       {isDarkMode ? (
-        <Sun className="text-primary" />
+        <Sun className="h-[18px] w-[18px]" strokeWidth={1.5} />
       ) : (
-        <Moon className="text-foreground" />
+        <Moon className="h-[18px] w-[18px]" strokeWidth={1.5} />
       )}
     </button>
   );

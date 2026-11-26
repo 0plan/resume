@@ -1,10 +1,4 @@
 import { Progress } from "@/components/ui/progress.tsx";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card.tsx";
 import { useTranslation } from "react-i18next";
 
 interface IContent {
@@ -16,12 +10,12 @@ interface IContent {
 }
 
 const SkillCategory = ({ title, items }: IContent) => (
-  <div className="p-4 border rounded-lg">
-    <h3 className="text-lg font-semibold mb-4">{title}</h3>
-    <div className="space-y-4">
+  <div>
+    <h3 className="mb-3 text-sm font-semibold">{title}</h3>
+    <div className="space-y-3">
       {items.map((skill) => (
         <div key={skill.title}>
-          <p className="text-sm font-medium leading-none mb-2">{skill.title}</p>
+          <p className="mb-1.5 text-xs leading-none text-muted-foreground">{skill.title}</p>
           <Progress value={skill.level * 10} />
         </div>
       ))}
@@ -34,16 +28,16 @@ const Skills = () => {
   const skillContents: IContent[] = t("skill.contents", { returnObjects: true });
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="text-xl font-bold">{t("skill.title")}</CardTitle>
-      </CardHeader>
-      <CardContent className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section>
+      <h2 className="border-b border-foreground pb-2 text-lg font-bold">
+        {t("skill.title")}
+      </h2>
+      <div className="grid gap-6 pt-4 sm:grid-cols-2 lg:grid-cols-1">
         {skillContents.map((content) => (
           <SkillCategory key={content.title} {...content} />
         ))}
-      </CardContent>
-    </Card>
+      </div>
+    </section>
   );
 };
 

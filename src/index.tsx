@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <div>
       <Header />
-      <main className="mx-auto mb-20 max-w-340 px-10">
+      <main className="mx-auto mb-20 max-w-340 px-4 pt-10 sm:px-10">
         <Outlet />
       </main>
       <Footer />

@@ -9,17 +9,19 @@ const Header = () => {
   const { toggleLang } = useLanguage();
 
   return (
-    <header className="sticky top-0 flex h-16 items-center justify-between gap-2 px-4 border-b z-50 backdrop-blur-sm">
+    <header className="sticky top-0 flex h-14 items-center justify-between gap-2 px-4 border-b z-50 backdrop-blur-sm">
       <nav
         className="mx-auto flex w-full max-w-340 items-center justify-between px-4"
         aria-label="Global"
       >
-        <Link to="/resume" className="text-xl font-semibold">
+        <Link to="/resume" className="text-base font-semibold">
           {t("project.title")}
         </Link>
-        <div className="flex items-center justify-end sm:px-10">
+        <div className="flex items-center justify-end gap-1">
           <ToggleDarkMode />
-          <Globe className="cursor-pointer ml-2" onClick={toggleLang} aria-label="Toggle language" />
+          <button onClick={toggleLang} aria-label="Toggle language" className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+            <Globe className="h-[18px] w-[18px]" strokeWidth={1.5} />
+          </button>
         </div>
       </nav>
     </header>
