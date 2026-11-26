@@ -1,35 +1,63 @@
 import { useTranslation } from "react-i18next";
-import avatar from "@/assets/img/brand.svg";
 import { Github, Home, Mail } from "lucide-react";
 
-const AboutMe = () => {
-  const { t, i18n } = useTranslation();
+const AboutMe = ({ interactive }: { interactive: boolean }) => {
+  const { t } = useTranslation();
 
   return (
     <section className="space-y-4">
-      <img
-        className="h-24 w-24 rounded-lg object-cover"
-        src={avatar}
-        alt={t("profile.name")}
-      />
+      <p className="text-sm font-semibold text-primary" lang="en">
+        0plan / The Curious Builder
+      </p>
       <div className="space-y-1">
-        <h1 className="text-2xl font-bold leading-tight">{t("profile.name")}</h1>
+        <h1 className="text-2xl font-bold leading-tight">
+          {t("profile.name")}
+        </h1>
         <p className="text-sm text-muted-foreground">{t("profile.position")}</p>
       </div>
-      <p className="text-sm text-muted-foreground">{t("profile.description")}</p>
+      <p className="text-sm text-muted-foreground">
+        {t("profile.description")}
+      </p>
+      <p className="font-mono text-sm" lang="en">
+        Explore. Build. Simplify.
+      </p>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <button type="button" onClick={() => window.print()} className="print:hidden rounded-md border border-primary bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:opacity-90">{i18n.language.startsWith("ko") ? "PDF 저장 / 인쇄" : "Save PDF / Print"}</button>
-        <a target="_blank" rel="noreferrer" href={t("profile.blog")} className="flex items-center text-sm text-primary hover:underline">
+        {interactive && (
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="print:hidden min-h-11 rounded-md border border-primary bg-primary px-3 text-sm font-medium text-primary-foreground"
+          >
+            {t("ui.print")}
+          </button>
+        )}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={t("profile.blog")}
+          className="flex min-h-11 items-center text-sm text-primary hover:underline"
+        >
           <Home className="mr-1 h-4 w-4" />
-          Blog
+          <span className="print:hidden">Blog</span>
+          <span className="hidden print:inline">{t("profile.blog")}</span>
         </a>
-        <a target="_blank" rel="noreferrer" href={t("profile.github")} className="flex items-center text-sm text-primary hover:underline">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={t("profile.github")}
+          className="flex min-h-11 items-center text-sm text-primary hover:underline"
+        >
           <Github className="mr-1 h-4 w-4" />
-          GitHub
+          <span className="print:hidden">GitHub</span>
+          <span className="hidden print:inline">{t("profile.github")}</span>
         </a>
-        <a target="_blank" rel="noreferrer" href={`mailto:${t("profile.email")}`} className="flex items-center text-sm text-primary hover:underline">
+        <a
+          href={`mailto:${t("profile.email")}`}
+          className="flex min-h-11 items-center text-sm text-primary hover:underline"
+        >
           <Mail className="mr-1 h-4 w-4" />
-          Email
+          <span className="print:hidden">Email</span>
+          <span className="hidden print:inline">{t("profile.email")}</span>
         </a>
       </div>
     </section>

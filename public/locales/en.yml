@@ -1,5 +1,26 @@
 project:
   title: Resume
+ui:
+  navigation: Main navigation
+  skip: Skip to content
+  projects: Projects
+  lab: Lab
+  language: 한국어로 전환
+  dark: Toggle dark mode
+  light: Toggle light mode
+  print: Save PDF / Print
+  exploreProjects: Explore projects
+  exploreLab: Explore research
+  back: Back to list
+  home: Back to resume
+  missing: Project not found.
+  missingPage: Page not found.
+  overview: Work on this project
+  design: Technology and design choices
+  diagram: Roles of Proxmox and OCI
+  blog: Related technical blog
+  details: Details
+  history: Revision history
 
 profile:
   name: Lee, Chungho
@@ -374,6 +395,8 @@ featured:
   title: "Featured personal projects"
   contents:
     - name: "Private Cloud & Home Infrastructure"
+      id: private-cloud-home-infrastructure
+      design: "Proxmox hosts the NAS and virtual services; the media service runs separately on OCI ARM. Separating the system disk from data and backups lets them be handled independently during disk changes and migration."
       position: "Personal infrastructure operations"
       tools: "Proxmox, ZFS, Docker, OCI, Tailscale"
       date:
@@ -384,6 +407,8 @@ featured:
         - "Migrated a media service to OCI ARM and configured remote access"
 
     - name: "Saeyo"
+      id: saeyo
+      design: "A list of transactions alone does not show commitments from installments or recurring payments. The web tool brings transactions, savings and liabilities together for a personal view of those commitments."
       position: "Personal finance tool"
       tools: "Web Application"
       date:
@@ -396,6 +421,7 @@ labs:
   title: "Research & Labs"
   contents:
     - name: "Local AI Development Lab"
+      id: local-ai-development-lab
       position: "Experiments in progress"
       tools: "Ollama, CUDA, OpenCode"
       date:
@@ -405,6 +431,7 @@ labs:
         - "Investigating GPU memory and long-context performance constraints"
 
     - name: "Apple T2 Linux Research"
+      id: apple-t2-linux-research
       position: "Compatibility research"
       tools: "Fedora, Linux, EFI"
       date:
@@ -414,6 +441,7 @@ labs:
         - "Exploring headless server use"
 
     - name: "Connected Vehicle Research"
+      id: connected-vehicle-research
       position: "Exploration and planning"
       tools: "Tesla Fleet API, BLE"
       date:
@@ -455,12 +483,12 @@ portfolio:
         to: Current
       descriptions:
         - Collection of reusable starter templates for web and mobile development
-        - Shared UI components, internationalization and Storybook documentation across web templates
-        - Bottom navigation, theme switching and state management in the Flutter template
-        - Next.js [https://github.com/0plan/next-common]
-        - Vue [https://github.com/0plan/vue3-starter-template]
-        - React [https://github.com/0plan/vrtn]
-        - Flutter [https://github.com/0plan/flutter-starter]
+        - Tailwind CSS and shadcn/ui Storybook documentation for the web templates; internationalization in the Vite-based Vue and React templates
+        - Home, bookmarks and settings tabs, light/dark/system themes and flutter_zustand state management in Flutter
+        - Next.js 14 (May 2024) [https://github.com/0plan/next-common] · Demo [https://next.0plan.dev/]
+        - Vue 3 (May 2024) [https://github.com/0plan/vue3-starter-template] · Demo [https://vue.0plan.dev/]
+        - React (January 2024) [https://github.com/0plan/vrtn] · Demo [https://vrtn.0plan.dev/]
+        - Flutter (July 2024) [https://github.com/0plan/flutter-starter]
 
     - name: Grade Input Macro
       position: 'Inha Technical College Work-Study Student'

@@ -1,14 +1,10 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
-
-@import './styles/brand.css';
-@import 'tailwindcss';
-
-@plugin 'tailwindcss-animate';
+@import "./styles/brand.css";
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: 'Pretendard Variable', Pretendard, system-ui, -apple-system, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  --font-sans: system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
@@ -33,20 +29,78 @@
     @apply bg-background text-foreground antialiased;
     word-break: keep-all;
   }
+  a {
+    overflow-wrap: anywhere;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+}
+
+.nav-actions :is(a, button) {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 0.25rem;
+}
+.nav-actions :is(:hover, [aria-current="page"]) {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.skip-link:not(:focus) {
+  @apply sr-only;
+}
+.skip-link:focus {
+  @apply absolute top-1 left-2 z-10 bg-card p-2 text-primary;
 }
 
 @media print {
-  @page { size: A4; margin: 13mm; }
-  body { font-size: 10pt; background: white; color: #111; }
-  header, footer, .print-hidden { display: none !important; }
-  main { margin: 0 !important; padding: 0 !important; max-width: none !important; }
-  section h2, section h3 { break-after: avoid; }
-  section .divide-y > div { break-inside: avoid; }
-  a { color: #111 !important; text-decoration: underline; }
-}
-
-@layer base {
-  a { overflow-wrap: anywhere; }
-  a:focus-visible, button:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
-  ::selection { background: var(--primary); color: var(--primary-foreground); }
+  @page {
+    size: A4;
+    margin: 13mm;
+  }
+  body {
+    font-size: 10pt;
+    background: white;
+    color: #111;
+  }
+  :focus-visible {
+    outline: none;
+  }
+  header,
+  footer {
+    display: none !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  section h2,
+  section h3 {
+    break-after: avoid;
+  }
+  .resume-layout {
+    display: block;
+  }
+  .resume-layout section {
+    container-type: normal;
+    margin-block: 1rem;
+  }
+  .resume-layout article {
+    display: block;
+    break-inside: avoid;
+    padding-block: 0.4rem;
+  }
+  a {
+    color: #111 !important;
+    text-decoration: underline;
+  }
 }

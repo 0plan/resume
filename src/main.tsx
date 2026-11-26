@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Main from "./index.tsx";
-import "@/lib/dark-mode.ts";
 import "@/lib/locales";
 import Home from "@/pages/Home.tsx";
 import Projects from "@/pages/Projects.tsx";
+import NotFound from "@/pages/NotFound";
 
 const router = createHashRouter([
   {
@@ -20,6 +20,8 @@ const router = createHashRouter([
       { path: "projects", element: <Projects /> },
       { path: "projects/:id", element: <Projects /> },
       { path: "lab", element: <Projects lab /> },
+      { path: "lab/:id", element: <Projects lab /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);

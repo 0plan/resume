@@ -1,5 +1,26 @@
 project:
   title: 이력서
+ui:
+  navigation: 주 메뉴
+  skip: 본문으로 건너뛰기
+  projects: 프로젝트
+  lab: Lab
+  language: Switch to English
+  dark: 다크 모드로 전환
+  light: 라이트 모드로 전환
+  print: PDF 저장 / 인쇄
+  exploreProjects: 프로젝트 상세 보기
+  exploreLab: 연구 상세 보기
+  back: 목록으로
+  home: 이력서로
+  missing: 프로젝트를 찾을 수 없습니다.
+  missingPage: 페이지를 찾을 수 없습니다.
+  overview: 작업 내용
+  design: 기술 선택과 설계
+  diagram: Proxmox와 OCI의 역할
+  blog: 관련 기술 블로그
+  details: 상세 보기
+  history: 변경 이력
 
 profile:
   name: 이충호 [Lee, Chungho]
@@ -374,6 +395,8 @@ featured:
   title: "대표 개인 프로젝트"
   contents:
     - name: "Private Cloud & Home Infrastructure"
+      id: private-cloud-home-infrastructure
+      design: "NAS와 가상 서비스는 Proxmox에서 운영하고 미디어 서비스는 OCI ARM으로 분리했습니다. 시스템 디스크를 교체하거나 데이터를 옮길 때 데이터와 백업을 따로 다룰 수 있도록 스토리지를 나눴습니다."
       position: "개인 인프라 운영"
       tools: "Proxmox, ZFS, Docker, OCI, Tailscale"
       date:
@@ -384,6 +407,8 @@ featured:
         - "OCI ARM 환경으로 미디어 서비스 이전 및 원격 접근 구성"
 
     - name: "Saeyo"
+      id: saeyo
+      design: "수입·지출 내역만으로는 할부와 정기 결제로 남은 의무를 파악하기 어렵습니다. 거래 내역과 함께 저축·부채 항목을 확인할 수 있도록 구성한 개인용 웹 도구입니다."
       position: "개인 재무 관리 도구"
       tools: "Web Application"
       date:
@@ -396,6 +421,7 @@ labs:
   title: "기술 연구 및 실험"
   contents:
     - name: "Local AI Development Lab"
+      id: local-ai-development-lab
       position: "실험 진행 중"
       tools: "Ollama, CUDA, OpenCode"
       date:
@@ -405,6 +431,7 @@ labs:
         - "GPU 메모리 및 긴 컨텍스트의 성능 제약 검토"
 
     - name: "Apple T2 Linux Research"
+      id: apple-t2-linux-research
       position: "호환성 연구"
       tools: "Fedora, Linux, EFI"
       date:
@@ -414,6 +441,7 @@ labs:
         - "헤드리스 서버 활용 가능성 검토"
 
     - name: "Connected Vehicle Research"
+      id: connected-vehicle-research
       position: "조사 및 기획 단계"
       tools: "Tesla Fleet API, BLE"
       date:
@@ -455,12 +483,12 @@ portfolio:
         to: Current
       descriptions:
         - 웹과 모바일 개발을 위한 재사용 가능한 시작 템플릿 모음
-        - 웹 템플릿의 공통 UI 구성, 다국어 지원 및 Storybook 문서화
-        - Flutter 템플릿의 하단 탭, 테마 전환 및 상태 관리
-        - Next.js [https://github.com/0plan/next-common]
-        - Vue [https://github.com/0plan/vue3-starter-template]
-        - React [https://github.com/0plan/vrtn]
-        - Flutter [https://github.com/0plan/flutter-starter]
+        - 웹 템플릿의 Tailwind CSS 구성과 shadcn/ui 기반 Storybook 문서화, Vite 기반 Vue·React 템플릿의 다국어 지원
+        - Flutter 템플릿의 홈·즐겨찾기·설정 탭, 라이트·다크·시스템 테마, flutter_zustand 상태 관리
+        - Next.js 14 (2024년 5월) [https://github.com/0plan/next-common] · 데모 [https://next.0plan.dev/]
+        - Vue 3 (2024년 5월) [https://github.com/0plan/vue3-starter-template] · 데모 [https://vue.0plan.dev/]
+        - React (2024년 1월) [https://github.com/0plan/vrtn] · 데모 [https://vrtn.0plan.dev/]
+        - Flutter (2024년 7월) [https://github.com/0plan/flutter-starter]
 
     - name: 성적 입력 매크로
       position: '인하공업전문대학 근로장학생'

@@ -1,16 +1,82 @@
+import assert from "node:assert/strict";
 import fs from "node:fs";
-import yaml from "js-yaml";
-const escape = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-fs.mkdirSync("dist/static", {recursive:true});
-fs.copyFileSync("src/styles/brand.css", "dist/static/brand.css");
-for (const lang of ["ko","en"]) {
-  const data = yaml.load(fs.readFileSync("public/locales/"+lang+".yml","utf8"));
-  const sections = ["experiences","featured","careers","portfolio","labs","education","certificates"].map(key => {
-    const section = data[key];
-    return "<section><h2>"+escape(section.title)+"</h2>"+section.contents.map(item=>"<article><h3>"+escape(item.name)+"</h3><p>"+escape(item.position)+" · "+escape(item.date.from)+" "+escape(item.date.to)+"</p><p>"+escape(item.tools)+"</p><ul>"+(item.descriptions??[]).map(d=>"<li>"+escape(d)+"</li>").join("")+"</ul></article>").join("")+"</section>";
-  }).join("");
-  const skills = "<section><h2>"+escape(data.skill.title)+"</h2>"+data.skill.contents.map(s=>"<p><strong>"+escape(s.title)+"</strong>: "+s.items.map(i=>escape(i.title)).join(", ")+"</p>").join("")+"</section>";
-  const html = '<!doctype html><html lang="'+lang+'"><meta charset="utf-8"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">     <link rel="icon" type="image/svg+xml" sizes="any" href="../favicon.svg">     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">     <link rel="manifest" href="../manifest.json"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+escape(data.profile.name)+' | Resume</title><meta name="description" content="'+escape(data.profile.description)+'"><link rel="stylesheet" href="./brand.css"><style>body{font-family:system-ui,sans-serif;max-width:850px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:var(--foreground);background:var(--background)}article{break-inside:avoid}h2{border-bottom:1px solid var(--border)}a{color:var(--primary)}h3{margin-bottom:0}p{margin:.3rem 0}@media print{body{background:white;color:#111}nav{display:none}@page{size:A4;margin:13mm}}</style><nav><a href="../">Interactive resume</a> · <a href="'+(lang==="ko"?"en":"ko")+'.html">'+(lang==="ko"?"English":"한국어")+'</a></nav><h1>'+escape(data.profile.name)+'</h1><p>'+escape(data.profile.position)+'</p><p>'+escape(data.profile.description)+'</p><p><a href="'+escape(data.profile.github)+'">GitHub</a> · <a href="'+escape(data.profile.blog)+'">Blog</a></p>'+sections+skills+'</html>';
-  fs.writeFileSync("dist/static/"+lang+".html",html);
+import { load } from "js-yaml";
+import { createServer } from "vite";
+
+const languages = ["ko", "en"];
+const site = "https://0plan.github.io/resume/";
+const locales = Object.fromEntries(
+  languages.map((lang) => [
+    lang,
+    load(fs.readFileSync(`public/locales/${lang}.yml`, "utf8")),
+  ]),
+);
+
+// Compare keys, list lengths (including bullets) and leaf types before i18next can fall back.
+function structure(value, path) {
+  if (Array.isArray(value))
+    return value.map((item, i) => structure(item, `${path}[${i}]`));
+  if (value !== null && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [
+        key,
+        structure(item, `${path}.${key}`),
+      ]),
+    );
+  }
+  assert.ok(
+    typeof value === "string" && value.trim(),
+    `Expected nonempty text at ${path}`,
+  );
+  return "text";
 }
-fs.writeFileSync("dist/sitemap.xml",'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+["","static/ko.html","static/en.html"].map(p=>"<url><loc>https://0plan.github.io/resume/"+p+"</loc></url>").join("")+"</urlset>");
+assert.deepEqual(
+  structure(locales.en, "en"),
+  structure(locales.ko, "ko"),
+  "Resume translations differ in structure",
+);
+for (const section of ["featured", "labs"]) {
+  const ids = (locale) => locale[section].contents.map((item) => item.id);
+  const keys = ids(locales.ko);
+  assert.deepEqual(
+    ids(locales.en),
+    keys,
+    `Translated routes differ in ${section}`,
+  );
+  assert.equal(
+    new Set(keys).size,
+    keys.length,
+    `Duplicate route in ${section}`,
+  );
+  for (const key of keys) assert.match(key, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+}
+
+const manifest = JSON.parse(
+  fs.readFileSync("dist/.vite/manifest.json", "utf8"),
+);
+const styles = manifest["index.html"].css;
+assert.ok(styles?.length, "The resume needs the built stylesheet");
+fs.mkdirSync("dist/static", { recursive: true });
+
+// Use the same React resume and compiled CSS for print, static HTML and the interactive site.
+const server = await createServer({
+  server: { middlewareMode: true, watch: null, hmr: false },
+});
+try {
+  const { renderPage } = await server.ssrLoadModule("/scripts/static-page.tsx");
+  for (const lang of languages) {
+    const html = await renderPage(lang, locales[lang], styles, site);
+    fs.writeFileSync(`dist/static/${lang}.html`, `<!doctype html>\n${html}`);
+  }
+} finally {
+  await server.close();
+}
+
+const pages = ["", ...languages.map((lang) => `static/${lang}.html`)];
+fs.writeFileSync(
+  "dist/sitemap.xml",
+  `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${pages.map((path) => `  <url><loc>${site}${path}</loc></url>`).join("\n")}
+</urlset>\n`,
+);
