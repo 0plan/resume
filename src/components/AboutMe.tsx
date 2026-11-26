@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import avatar from "@/assets/img/avatar.jfif";
+import avatar from "@/assets/img/brand.svg";
 import { Github, Home, Mail } from "lucide-react";
 
 const AboutMe = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section className="space-y-4">
@@ -18,15 +18,16 @@ const AboutMe = () => {
       </div>
       <p className="text-sm text-muted-foreground">{t("profile.description")}</p>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <a target="_blank" href={t("profile.blog")} className="flex items-center text-sm hover:underline">
+        <button type="button" onClick={() => window.print()} className="print:hidden rounded-md border px-3 py-1.5 text-sm font-medium">{i18n.language.startsWith("ko") ? "PDF 저장 / 인쇄" : "Save PDF / Print"}</button>
+        <a target="_blank" rel="noreferrer" href={t("profile.blog")} className="flex items-center text-sm hover:underline">
           <Home className="mr-1 h-4 w-4" />
           Blog
         </a>
-        <a target="_blank" href={t("profile.github")} className="flex items-center text-sm hover:underline">
+        <a target="_blank" rel="noreferrer" href={t("profile.github")} className="flex items-center text-sm hover:underline">
           <Github className="mr-1 h-4 w-4" />
           GitHub
         </a>
-        <a target="_blank" href={`mailto:${t("profile.email")}`} className="flex items-center text-sm hover:underline">
+        <a target="_blank" rel="noreferrer" href={`mailto:${t("profile.email")}`} className="flex items-center text-sm hover:underline">
           <Mail className="mr-1 h-4 w-4" />
           Email
         </a>
