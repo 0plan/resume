@@ -447,52 +447,20 @@ portfolio:
         - Posts organized by topic, such as Backend, Frontend, Database, Git and Oracle Cloud (OCI)
         - source[https://github.com/0plan/blog]
 
-    - name: 'Flutter Starter Personal Project'
-      position: 'Personal Project'
-      tools: 'Flutter, Dart'
-      date:
-        from: July 2024
-      descriptions:
-        - Flutter starter template with a bottom tab layout (home, bookmark, settings)
-        - Light, dark and system theme switching
-        - State management with flutter_zustand
-        - source[https://github.com/0plan/flutter-starter]
-
-    - name: 'Next.js 14 Boilerplate Personal Project'
-      position: 'Personal Project'
-      tools: 'Next.js, React, TypeScript'
-      date:
-        from: May 2024
-        to: Current
-      descriptions:
-        - Template project using Next, React, TypeScript, Tailwind CSS
-        - Project github [https://github.com/0plan/next-common]
-        - Vercel deployment Demo [https://next.0plan.dev/]
-        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
-
-    - name: 'Vue 3 Boilerplate Personal Project'
-      position: 'Personal Project'
-      tools: 'Vite, Vue.js, TypeScript'
-      date:
-        from: May 2024
-        to: Current
-      descriptions:
-        - Template project using Vite, Vue.js, TypeScript, Tailwind CSS, i18n
-        - Project github [https://github.com/0plan/vue3-starter-template]
-        - Vercel deployment Demo [https://vue.0plan.dev/]
-        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
-
-    - name: 'React Boilerplate Personal Project'
-      position: 'Personal Project'
-      tools: 'Vite, React, TypeScript'
+    - name: Developer Starter Kits
+      position: Personal project
+      tools: 'Next.js, React, Vue 3, Flutter, TypeScript, Dart, Tailwind CSS, Storybook'
       date:
         from: January 2024
         to: Current
       descriptions:
-        - Template project using Vite, React, TypeScript, Tailwind CSS, i18n
-        - Project github [https://github.com/0plan/vrtn]
-        - Vercel deployment Demo [https://vrtn.0plan.dev/]
-        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
+        - Collection of reusable starter templates for web and mobile development
+        - Shared UI components, internationalization and Storybook documentation across web templates
+        - Bottom navigation, theme switching and state management in the Flutter template
+        - Next.js [https://github.com/0plan/next-common]
+        - Vue [https://github.com/0plan/vue3-starter-template]
+        - React [https://github.com/0plan/vrtn]
+        - Flutter [https://github.com/0plan/flutter-starter]
 
     - name: Grade Input Macro
       position: 'Inha Technical College Work-Study Student'
