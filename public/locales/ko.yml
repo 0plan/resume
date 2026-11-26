@@ -4,8 +4,8 @@ project:
 profile:
   name: 이충호 [Lee, Chungho]
   email: chlee125@gmail.com
-  position: Full Stack Developer
-  description: 더욱 편하게 살기위해 개발하는 개발자
+  position: Full Stack Engineer & DevOps
+  description: 더욱 편하게 살기 위해 개발합니다. 반복 업무를 자동화하고 복잡한 문제를 단순한 시스템으로 해결하며, 웹 개발부터 인프라 구축과 서비스 운영까지 경험해 왔습니다.
   blog: https://0plan.dev
   github: https://github.com/0plan
 
@@ -370,6 +370,58 @@ careers:
         - Backend는 Node.js의 Express.js, Frontend는 ejs로 구현
       image: homepage.png
 
+featured:
+  title: "대표 개인 프로젝트"
+  contents:
+    - name: "Private Cloud & Home Infrastructure"
+      position: "개인 인프라 운영"
+      tools: "Proxmox, ZFS, Docker, OCI, Tailscale"
+      date:
+        from: "2026년"
+      descriptions:
+        - "Proxmox 기반 NAS 및 서비스 가상화 환경 재구성"
+        - "시스템 디스크와 데이터·백업 스토리지 분리, 데이터 마이그레이션"
+        - "OCI ARM 환경으로 미디어 서비스 이전 및 원격 접근 구성"
+
+    - name: "Saeyo"
+      position: "개인 재무 관리 도구"
+      tools: "Web Application"
+      date:
+        from: "개인 프로젝트"
+      descriptions:
+        - "수입과 지출, 정기 결제 및 저축 항목을 관리하는 개인용 웹 서비스"
+        - "할부 및 부채 정보를 포함한 재무 현황 분석에 활용"
+
+labs:
+  title: "기술 연구 및 실험"
+  contents:
+    - name: "Local AI Development Lab"
+      position: "실험 진행 중"
+      tools: "Ollama, CUDA, OpenCode"
+      date:
+        from: "2026년"
+      descriptions:
+        - "로컬 코딩 에이전트와 LLM 실행 환경 실험"
+        - "GPU 메모리 및 긴 컨텍스트의 성능 제약 검토"
+
+    - name: "Apple T2 Linux Research"
+      position: "호환성 연구"
+      tools: "Fedora, Linux, EFI"
+      date:
+        from: "2026년"
+      descriptions:
+        - "Intel Mac의 Linux 부팅 및 GPU 초기화 오류 분석"
+        - "헤드리스 서버 활용 가능성 검토"
+
+    - name: "Connected Vehicle Research"
+      position: "조사 및 기획 단계"
+      tools: "Tesla Fleet API, BLE"
+      date:
+        from: "2026년"
+      descriptions:
+        - "공식 차량 API 및 공개 BLE 데이터 구조 조사"
+        - "차량 데이터 기반 서비스 아이디어 탐색"
+
 portfolio:
   title: 포트폴리오
   contents:
@@ -487,49 +539,36 @@ skill:
     - title: Frontend
       items:
         - title: React
-          level: 7
         - title: Vue
-          level: 9
+        - title: Nuxt
+        - title: Next.js
     - title: Backend
       items:
         - title: Node.js
-          level: 7
         - title: Java Spring Boot
-          level: 8
+        - title: Express.js
+        - title: Spring Batch
     - title: Etc.
       items:
         - title: Flutter
-          level: 3
         - title: TypeScript
-          level: 8
     - title: Database
       items:
         - title: PostgreSQL
-          level: 7
         - title: Oracle
-          level: 7
         - title: MySQL / MariaDB
-          level: 7
         - title: MSSQL
-          level: 6
     - title: DevOps
       items:
         - title: AWS / Azure / GCP
-          level: 6
         - title: Docker
-          level: 8
         - title: Jenkins / GitHub Actions
-          level: 8
         - title: Git
-          level: 8
         - title: Linux / Unix
-          level: 8
     - title: 언어
       items:
         - title: 한국어
-          level: 10
         - title: 영어
-          level: 5
 
 experiences:
   title: 경력
