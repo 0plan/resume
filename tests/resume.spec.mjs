@@ -124,19 +124,13 @@ test("language and dark mode persist; print works", async ({ page }, info) => {
     path: info.outputPath("dark-english.png"),
     fullPage: true,
   });
-  await page.evaluate(() => {
-    window.print = () => {
-      document.body.dataset.printed = "yes";
-    };
-  });
-  await page.getByRole("button", { name: "Save PDF / Print" }).click();
-  await expect(page.locator("body")).toHaveAttribute("data-printed", "yes");
+  await expect(page.getByRole("button", { name: /PDF|print/i })).toHaveCount(0);
   await page.emulateMedia({ media: "print" });
   await expect(page.locator("header")).toBeHidden();
   await expect(page.locator("footer")).toBeHidden();
   await expect(
-    page.getByRole("button", { name: "Save PDF / Print" }),
-  ).toBeHidden();
+    page.getByRole("link", { name: locale("en").profile.email, exact: true }),
+  ).toBeVisible();
   await expect(page.locator("main article").first()).toHaveCSS(
     "break-inside",
     "avoid",
@@ -339,11 +333,8 @@ test("brand colors and text contrast work in light, dark and print", async ({
       expect(ratio, pair).toBeGreaterThanOrEqual(4.5);
     }
     await expect(
-      page.getByRole("button", { name: "PDF 저장 / 인쇄" }),
-    ).toHaveCSS(
-      "background-color",
-      dark ? "rgb(20, 184, 166)" : "rgb(15, 118, 110)",
-    );
+      page.getByRole("link", { name: "GitHub", exact: true }),
+    ).toHaveCSS("color", dark ? "rgb(20, 184, 166)" : "rgb(15, 118, 110)");
     await expect(page.locator("body")).toHaveCSS(
       "background-color",
       dark ? "rgb(15, 23, 42)" : "rgb(241, 245, 249)",

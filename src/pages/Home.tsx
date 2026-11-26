@@ -17,7 +17,7 @@ export default function Home({
 
   return (
     <div className="resume-layout grid grid-cols-1 items-start gap-x-12 gap-y-10 lg:grid-cols-[18rem_1fr] lg:grid-rows-[auto_1fr]">
-      <AboutMe interactive={interactive} />
+      <AboutMe />
       <div className="min-w-0 space-y-10 lg:col-start-2 lg:row-span-2 lg:row-start-1">
         <Information documents={t("experiences", { returnObjects: true })} />
         <div>

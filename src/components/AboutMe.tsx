@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Github, Home, Mail } from "lucide-react";
 
-const AboutMe = ({ interactive }: { interactive: boolean }) => {
+const AboutMe = () => {
   const { t } = useTranslation();
 
   return (
@@ -22,15 +22,6 @@ const AboutMe = ({ interactive }: { interactive: boolean }) => {
         Explore. Build. Simplify.
       </p>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        {interactive && (
-          <button
-            type="button"
-            onClick={() => window.print()}
-            className="print:hidden min-h-11 rounded-md border border-primary bg-primary px-3 text-sm font-medium text-primary-foreground"
-          >
-            {t("ui.print")}
-          </button>
-        )}
         <a
           target="_blank"
           rel="noreferrer"

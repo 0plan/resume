@@ -8,7 +8,6 @@ ui:
   language: Switch to English
   dark: 다크 모드로 전환
   light: 라이트 모드로 전환
-  print: PDF 저장 / 인쇄
   exploreProjects: 프로젝트 상세 보기
   exploreLab: 연구 상세 보기
   back: 목록으로

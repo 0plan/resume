@@ -8,7 +8,6 @@ ui:
   language: 한국어로 전환
   dark: Toggle dark mode
   light: Toggle light mode
-  print: Save PDF / Print
   exploreProjects: Explore projects
   exploreLab: Explore research
   back: Back to list

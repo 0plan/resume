@@ -26,7 +26,6 @@ type Label =
   | "language"
   | "dark"
   | "light"
-  | "print"
   | "exploreProjects"
   | "exploreLab"
   | "back"
