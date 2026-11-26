@@ -1,0 +1,26 @@
+name: Verify resume
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: ['enhance/resume-portfolio']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec tsc --noEmit
+      - run: pnpm run build
+      - run: test -s dist/static/ko.html && test -s dist/static/en.html && test -s dist/sitemap.xml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume-preview
+          path: dist
