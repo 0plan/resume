@@ -64,3 +64,34 @@ test("static bilingual HTML and sitemap are available without JavaScript", async
   expect(await sitemap.text()).toContain("static/ko.html");
   expect(fs.existsSync(path.resolve("dist/static/en.html"))).toBe(true);
 });
+
+test("terminal cube favicon and manifest resolve from resume and static pages", async ({ page, request }) => {
+  for (const url of ["/resume/", "/resume/#/projects", "/resume/static/ko.html", "/resume/static/en.html"]) {
+    await page.goto(url);
+    const icon = page.locator('link[rel="icon"][type="image/svg+xml"]');
+    await expect(icon).toHaveCount(1);
+    const href = await icon.evaluate(link => link.href);
+    expect(new URL(href).pathname).toBe("/resume/favicon.svg");
+    const response = await request.get(href);
+    expect(response.ok()).toBe(true);
+    expect(response.headers()["content-type"]).toContain("image/svg+xml");
+    expect(await response.text()).toContain("0plan terminal cube");
+    for (const selector of ['link[rel="icon"][type="image/png"]', 'link[rel="apple-touch-icon"]']) {
+      const imageUrl = await page.locator(selector).evaluate(link => link.href);
+      const result = await request.get(imageUrl);
+      expect(result.ok()).toBe(true);
+      expect(result.headers()["content-type"]).toContain("image/png");
+      const size = await page.evaluate(async url => {
+        const img = new Image();
+        img.src = url;
+        await img.decode();
+        return [img.naturalWidth, img.naturalHeight];
+      }, imageUrl);
+      expect(size).toEqual(selector.includes("apple") ? [180, 180] : [32, 32]);
+    }
+  }
+  const manifest = await request.get("/resume/manifest.json");
+  expect(manifest.ok()).toBe(true);
+  const data = await manifest.json();
+  for (const item of data.icons) expect((await request.get(new URL(item.src, manifest.url()).href)).ok()).toBe(true);
+});
