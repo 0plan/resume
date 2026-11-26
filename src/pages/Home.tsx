@@ -9,16 +9,18 @@ export default function Home() {
   return (
     <div>
       <article>
-        <title>Fullstack Developer | 0plan</title>
-        <meta name="description" content="Fullstack Developer Resume - 0plan" />
+        <title>Full Stack Engineer & DevOps | 0plan</title>
+        <meta name="description" content="Full Stack Engineer & DevOps Resume - 0plan" />
       </article>
       {/* DOM 순서 = 모바일 순서. lg 부터는 프로필·보조 정보가 왼쪽 열, 경력이 오른쪽 열 */}
       <div className="grid grid-cols-1 items-start gap-x-12 gap-y-10 lg:grid-cols-[18rem_1fr] lg:grid-rows-[auto_1fr]">
         <AboutMe />
         <div className="space-y-10 lg:col-start-2 lg:row-span-2 lg:row-start-1">
           <Information documents={t("experiences", { returnObjects: true })} />
+          <Information documents={t("featured", { returnObjects: true })} />
           <Information documents={t("careers", { returnObjects: true })} />
           <Information documents={t("portfolio", { returnObjects: true })} />
+          <Information documents={t("labs", { returnObjects: true })} />
         </div>
         <aside className="space-y-10 lg:col-start-1 lg:row-start-2">
           <Skills />
