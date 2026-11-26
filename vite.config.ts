@@ -1,16 +1,16 @@
-import * as path from "path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/resume",
-  plugins: [react(), tsconfigPaths()],
+  base: "/resume/",
+  appType: "mpa",
+  plugins: [react()],
+  build: { manifest: true },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  assetsInclude: ["**/*.yml"],
 });

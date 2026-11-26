@@ -1,13 +1,10 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
-
-@import 'tailwindcss';
-
-@plugin 'tailwindcss-animate';
+@import "./styles/brand.css";
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: 'Pretendard Variable', Pretendard, system-ui, -apple-system, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  --font-sans: system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
@@ -24,34 +21,6 @@
   --color-ring: var(--ring);
 }
 
-/* 무채색 토큰: chroma 0, 밝기 단계만 쓴다 */
-:root {
-  --radius: 0.25rem;
-  --background: oklch(0.985 0 0);
-  --foreground: oklch(0.17 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.17 0 0);
-  --primary: oklch(0.22 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.955 0 0);
-  --muted-foreground: oklch(0.46 0 0);
-  --border: oklch(0.9 0 0);
-  --ring: oklch(0.6 0 0);
-}
-
-.dark {
-  --background: oklch(0.24 0 0);
-  --foreground: oklch(0.9 0 0);
-  --card: oklch(0.28 0 0);
-  --card-foreground: oklch(0.9 0 0);
-  --primary: oklch(0.82 0 0);
-  --primary-foreground: oklch(0.24 0 0);
-  --muted: oklch(0.33 0 0);
-  --muted-foreground: oklch(0.72 0 0);
-  --border: oklch(0.37 0 0);
-  --ring: oklch(0.6 0 0);
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -59,5 +28,79 @@
   body {
     @apply bg-background text-foreground antialiased;
     word-break: keep-all;
+  }
+  a {
+    overflow-wrap: anywhere;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+}
+
+.nav-actions :is(a, button) {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 0.25rem;
+}
+.nav-actions :is(:hover, [aria-current="page"]) {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.skip-link:not(:focus) {
+  @apply sr-only;
+}
+.skip-link:focus {
+  @apply absolute top-1 left-2 z-10 bg-card p-2 text-primary;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 13mm;
+  }
+  body {
+    font-size: 10pt;
+    background: white;
+    color: #111;
+  }
+  :focus-visible {
+    outline: none;
+  }
+  header,
+  footer {
+    display: none !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  section h2,
+  section h3 {
+    break-after: avoid;
+  }
+  .resume-layout {
+    display: block;
+  }
+  .resume-layout section {
+    container-type: normal;
+    margin-block: 1rem;
+  }
+  .resume-layout article {
+    display: block;
+    break-inside: avoid;
+    padding-block: 0.4rem;
+  }
+  a {
+    color: #111 !important;
+    text-decoration: underline;
   }
 }

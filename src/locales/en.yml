@@ -1,11 +1,31 @@
 project:
   title: Resume
+ui:
+  navigation: Main navigation
+  skip: Skip to content
+  projects: Projects
+  lab: Lab
+  language: 한국어로 전환
+  dark: Toggle dark mode
+  light: Toggle light mode
+  exploreProjects: Explore projects
+  exploreLab: Explore research
+  back: Back to list
+  home: Back to resume
+  missing: Project not found.
+  missingPage: Page not found.
+  overview: Work on this project
+  design: Technology and design choices
+  diagram: Roles of Proxmox and OCI
+  blog: Related technical blog
+  details: Details
+  history: Revision history
 
 profile:
   name: Lee, Chungho
   email: chlee125@gmail.com
-  position: Full Stack Developer
-  description: Developer who develops to make life easier
+  position: Full Stack Engineer & DevOps
+  description: I build software to make life easier. I automate repetitive work and simplify complex problems, drawing on experience across web development, infrastructure and service operations.
   blog: https://0plan.dev
   github: https://github.com/0plan
 
@@ -370,6 +390,65 @@ careers:
         - Backend with Node.js and Express.js, Frontend with ejs
       image: homepage.png
 
+featured:
+  title: "Featured personal projects"
+  contents:
+    - name: "Private Cloud & Home Infrastructure"
+      id: private-cloud-home-infrastructure
+      design: "Proxmox hosts the NAS and virtual services; the media service runs separately on OCI ARM. Separating the system disk from data and backups lets them be handled independently during disk changes and migration."
+      position: "Personal infrastructure operations"
+      tools: "Proxmox, ZFS, Docker, OCI, Tailscale"
+      date:
+        from: "2026"
+      descriptions:
+        - "Rebuilt a Proxmox environment for NAS and virtualized services"
+        - "Separated system, data and backup storage; migrated existing data"
+        - "Migrated a media service to OCI ARM and configured remote access"
+
+    - name: "Saeyo"
+      id: saeyo
+      design: "A list of transactions alone does not show commitments from installments or recurring payments. The web tool brings transactions, savings and liabilities together for a personal view of those commitments."
+      position: "Personal finance tool"
+      tools: "Web Application"
+      date:
+        from: "Personal project"
+      descriptions:
+        - "Personal web service for income, expenses, recurring payments and savings"
+        - "Used to analyze finances including installments and liabilities"
+
+labs:
+  title: "Research & Labs"
+  contents:
+    - name: "Local AI Development Lab"
+      id: local-ai-development-lab
+      position: "Experiments in progress"
+      tools: "Ollama, CUDA, OpenCode"
+      date:
+        from: "2026"
+      descriptions:
+        - "Experimenting with local coding agents and LLM runtimes"
+        - "Investigating GPU memory and long-context performance constraints"
+
+    - name: "Apple T2 Linux Research"
+      id: apple-t2-linux-research
+      position: "Compatibility research"
+      tools: "Fedora, Linux, EFI"
+      date:
+        from: "2026"
+      descriptions:
+        - "Analyzing Linux boot and GPU initialization issues on Intel Macs"
+        - "Exploring headless server use"
+
+    - name: "Connected Vehicle Research"
+      id: connected-vehicle-research
+      position: "Exploration and planning"
+      tools: "Tesla Fleet API, BLE"
+      date:
+        from: "2026"
+      descriptions:
+        - "Investigating official vehicle APIs and public BLE data structures"
+        - "Exploring vehicle-data service ideas"
+
 portfolio:
   title: Portfolio
   contents:
@@ -395,52 +474,20 @@ portfolio:
         - Posts organized by topic, such as Backend, Frontend, Database, Git and Oracle Cloud (OCI)
         - source[https://github.com/0plan/blog]
 
-    - name: 'Flutter Starter Personal Project'
-      position: 'Personal Project'
-      tools: 'Flutter, Dart'
-      date:
-        from: July 2024
-      descriptions:
-        - Flutter starter template with a bottom tab layout (home, bookmark, settings)
-        - Light, dark and system theme switching
-        - State management with flutter_zustand
-        - source[https://github.com/0plan/flutter-starter]
-
-    - name: 'Next.js 14 Boilerplate Personal Project'
-      position: 'Personal Project'
-      tools: 'Next.js, React, TypeScript'
-      date:
-        from: May 2024
-        to: Current
-      descriptions:
-        - Template project using Next, React, TypeScript, Tailwind CSS
-        - Project github [https://github.com/0plan/next-common]
-        - Vercel deployment Demo [https://next.0plan.dev/]
-        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
-
-    - name: 'Vue 3 Boilerplate Personal Project'
-      position: 'Personal Project'
-      tools: 'Vite, Vue.js, TypeScript'
-      date:
-        from: May 2024
-        to: Current
-      descriptions:
-        - Template project using Vite, Vue.js, TypeScript, Tailwind CSS, i18n
-        - Project github [https://github.com/0plan/vue3-starter-template]
-        - Vercel deployment Demo [https://vue.0plan.dev/]
-        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
-
-    - name: 'React Boilerplate Personal Project'
-      position: 'Personal Project'
-      tools: 'Vite, React, TypeScript'
+    - name: Developer Starter Kits
+      position: Personal project
+      tools: 'Next.js, React, Vue 3, Flutter, TypeScript, Dart, Tailwind CSS, Storybook'
       date:
         from: January 2024
         to: Current
       descriptions:
-        - Template project using Vite, React, TypeScript, Tailwind CSS, i18n
-        - Project github [https://github.com/0plan/vrtn]
-        - Vercel deployment Demo [https://vrtn.0plan.dev/]
-        - Component Storybook writing using shadcn/ui [https://ui.shadcn.com]
+        - Collection of reusable starter templates for web and mobile development
+        - Tailwind CSS and shadcn/ui Storybook documentation for the web templates; internationalization in the Vite-based Vue and React templates
+        - Home, bookmarks and settings tabs, light/dark/system themes and flutter_zustand state management in Flutter
+        - Next.js 14 (May 2024) [https://github.com/0plan/next-common] · Demo [https://next.0plan.dev/]
+        - Vue 3 (May 2024) [https://github.com/0plan/vue3-starter-template] · Demo [https://vue.0plan.dev/]
+        - React (January 2024) [https://github.com/0plan/vrtn] · Demo [https://vrtn.0plan.dev/]
+        - Flutter (July 2024) [https://github.com/0plan/flutter-starter]
 
     - name: Grade Input Macro
       position: 'Inha Technical College Work-Study Student'
@@ -487,49 +534,36 @@ skill:
     - title: Frontend
       items:
         - title: React
-          level: 7
         - title: Vue
-          level: 9
+        - title: Nuxt
+        - title: Next.js
     - title: Backend
       items:
         - title: Node.js
-          level: 7
         - title: Java Spring Boot
-          level: 8
+        - title: Express.js
+        - title: Spring Batch
     - title: Etc.
       items:
         - title: Flutter
-          level: 3
         - title: TypeScript
-          level: 8
     - title: Database
       items:
         - title: PostgreSQL
-          level: 7
         - title: Oracle
-          level: 7
         - title: MySQL / MariaDB
-          level: 7
         - title: MSSQL
-          level: 6
     - title: DevOps
       items:
         - title: AWS / Azure / GCP
-          level: 6
         - title: Docker
-          level: 8
         - title: Jenkins / GitHub Actions
-          level: 8
         - title: Git
-          level: 8
         - title: Linux / Unix
-          level: 8
     - title: Languages
       items:
         - title: Korean
-          level: 10
         - title: English
-          level: 5
 
 experiences:
   title: Experience
