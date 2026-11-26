@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="0plan terminal cube">
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F1F5F9"/><stop offset="1" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#silver)" stroke="#94A3B8" stroke-width="0.7" d="M28.3 5.7Q32 3.5 35.7 5.7L56.7 17.4Q60 19.3 60 23.2V43.3Q60 47.5 56.4 49.6L35.8 61Q32 63 28.2 61L7.6 49.6Q4 47.5 4 43.3V23.2Q4 19.3 7.3 17.4Z"/>
+  <path fill="#0F172A" d="M8 23Q8 20 11 21.5L29.5 31.9Q32 33.3 34.5 31.9L56.8 19.3Q58 19 58 22V44L33.5 59Q32 59.9 29.8 58.6L10.7 47.9Q8 46.4 8 43Z"/>
+  <path fill="#14C9C3" d="M35.7 34.2L56.6 22.3Q59.5 20.8 59.5 24V43.5Q59.5 47 56.5 48.7L36.2 60Q33.5 61.3 33.5 58.4V38.4Q33.5 35.5 35.7 34.2Z"/>
+  <path fill="url(#silver)" d="M29.7 6.7Q32 5.3 34.3 6.7L54.7 18.1Q56.5 19.2 54.7 20.2L34.1 31.8Q32 33 29.9 31.8L10 20.6Q8.2 19.5 10 18.5Z"/>
+  <path d="M14.2 33.6L20.1 40.4L14.2 42.3M22.3 46.5L27.8 49.5" fill="none" stroke="#F8FAFC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
