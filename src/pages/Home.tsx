@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import Skills from "@/components/Skills.tsx";
 import AboutMe from "@/components/AboutMe.tsx";
 import Information from "@/components/Information.tsx";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div>
@@ -17,10 +18,10 @@ export default function Home() {
         <AboutMe />
         <div className="space-y-10 lg:col-start-2 lg:row-span-2 lg:row-start-1">
           <Information documents={t("experiences", { returnObjects: true })} />
-          <Information documents={t("featured", { returnObjects: true })} />
+          <div><Information documents={t("featured", { returnObjects: true })} /><Link className="print:hidden text-sm underline underline-offset-4" to="/projects">{i18n.language.startsWith("ko") ? "프로젝트 상세 보기" : "Explore projects"}</Link></div>
           <Information documents={t("careers", { returnObjects: true })} />
           <Information documents={t("portfolio", { returnObjects: true })} />
-          <Information documents={t("labs", { returnObjects: true })} />
+          <div><Information documents={t("labs", { returnObjects: true })} /><Link className="print:hidden text-sm underline underline-offset-4" to="/lab">{i18n.language.startsWith("ko") ? "연구 상세 보기" : "Explore research"}</Link></div>
         </div>
         <aside className="space-y-10 lg:col-start-1 lg:row-start-2">
           <Skills />
