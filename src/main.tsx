@@ -1,21 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Main from "./index.tsx";
 import "@/lib/dark-mode.ts";
 import "@/lib/locales";
 import Home from "@/pages/Home.tsx";
+import Projects from "@/pages/Projects.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/resume",
+    path: "/",
     element: <Main />,
     children: [
       {
         path: "",
         element: <Home />,
       },
+      { path: "projects", element: <Projects /> },
+      { path: "projects/:id", element: <Projects /> },
+      { path: "lab", element: <Projects lab /> },
     ],
   },
 ]);
