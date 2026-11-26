@@ -447,52 +447,20 @@ portfolio:
         - Backend, Frontend, Database, Git, 오라클 클라우드(OCI) 등 주제별 정리
         - source[https://github.com/0plan/blog]
 
-    - name: 'Flutter Starter 개인 프로젝트'
-      position: '개인 프로젝트'
-      tools: 'Flutter, Dart'
-      date:
-        from: 2024년 7월
-      descriptions:
-        - 하단 탭(홈·즐겨찾기·설정) 구조의 Flutter 시작 템플릿
-        - 라이트·다크·시스템 테마 전환
-        - flutter_zustand로 상태 관리
-        - source[https://github.com/0plan/flutter-starter]
-
-    - name: 'Next.js 14 Boilerplate 개인 프로젝트'
-      position: '개인 프로젝트'
-      tools: 'Next.js, React, TypeScript'
-      date:
-        from: 2024년 5월
-        to: Current
-      descriptions:
-        - Next, React, TypeScript, Tailwind CSS를 사용한 템플릿 프로젝트
-        - 프로젝트 github [https://github.com/0plan/next-common]
-        - Vercel 배포 Demo[https://next.0plan.dev/]
-        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
-
-    - name: 'Vue 3 Boilerplate 개인 프로젝트'
-      position: '개인 프로젝트'
-      tools: 'Vite, Vue.js, TypeScript'
-      date:
-        from: 2024년 5월
-        to: Current
-      descriptions:
-        - Vite, Vue.js, TypeScript, Tailwind CSS, i18n을 사용한 템플릿 프로젝트
-        - 프로젝트 github [https://github.com/0plan/vue3-starter-template]
-        - Vercel 배포 Demo[https://vue.0plan.dev/]
-        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
-
-    - name: 'React Boilerplate 개인 프로젝트'
-      position: '개인 프로젝트'
-      tools: 'Vite, React, TypeScript'
+    - name: Developer Starter Kits
+      position: 개인 프로젝트
+      tools: 'Next.js, React, Vue 3, Flutter, TypeScript, Dart, Tailwind CSS, Storybook'
       date:
         from: 2024년 1월
         to: Current
       descriptions:
-        - Vite, React, TypeScript, Tailwind CSS, i18n을 사용한 템플릿 프로젝트
-        - 프로젝트 github [https://github.com/0plan/vrtn]
-        - Vercel 배포 Demo[https://vrtn.0plan.dev/]
-        - shadcn/ui[https://ui.shadcn.com] 를 이용한 컴포넌트 Storybook 작성
+        - 웹과 모바일 개발을 위한 재사용 가능한 시작 템플릿 모음
+        - 웹 템플릿의 공통 UI 구성, 다국어 지원 및 Storybook 문서화
+        - Flutter 템플릿의 하단 탭, 테마 전환 및 상태 관리
+        - Next.js [https://github.com/0plan/next-common]
+        - Vue [https://github.com/0plan/vue3-starter-template]
+        - React [https://github.com/0plan/vrtn]
+        - Flutter [https://github.com/0plan/flutter-starter]
 
     - name: 성적 입력 매크로
       position: '인하공업전문대학 근로장학생'
