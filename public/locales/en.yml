@@ -4,8 +4,8 @@ project:
 profile:
   name: Lee, Chungho
   email: chlee125@gmail.com
-  position: Full Stack Developer
-  description: Developer who develops to make life easier
+  position: Full Stack Engineer & DevOps
+  description: I build software to make life easier. I automate repetitive work and simplify complex problems, drawing on experience across web development, infrastructure and service operations.
   blog: https://0plan.dev
   github: https://github.com/0plan
 
@@ -370,6 +370,58 @@ careers:
         - Backend with Node.js and Express.js, Frontend with ejs
       image: homepage.png
 
+featured:
+  title: "Featured personal projects"
+  contents:
+    - name: "Private Cloud & Home Infrastructure"
+      position: "Personal infrastructure operations"
+      tools: "Proxmox, ZFS, Docker, OCI, Tailscale"
+      date:
+        from: "2026"
+      descriptions:
+        - "Rebuilt a Proxmox environment for NAS and virtualized services"
+        - "Separated system, data and backup storage; migrated existing data"
+        - "Migrated a media service to OCI ARM and configured remote access"
+
+    - name: "Saeyo"
+      position: "Personal finance tool"
+      tools: "Web Application"
+      date:
+        from: "Personal project"
+      descriptions:
+        - "Personal web service for income, expenses, recurring payments and savings"
+        - "Used to analyze finances including installments and liabilities"
+
+labs:
+  title: "Research & Labs"
+  contents:
+    - name: "Local AI Development Lab"
+      position: "Experiments in progress"
+      tools: "Ollama, CUDA, OpenCode"
+      date:
+        from: "2026"
+      descriptions:
+        - "Experimenting with local coding agents and LLM runtimes"
+        - "Investigating GPU memory and long-context performance constraints"
+
+    - name: "Apple T2 Linux Research"
+      position: "Compatibility research"
+      tools: "Fedora, Linux, EFI"
+      date:
+        from: "2026"
+      descriptions:
+        - "Analyzing Linux boot and GPU initialization issues on Intel Macs"
+        - "Exploring headless server use"
+
+    - name: "Connected Vehicle Research"
+      position: "Exploration and planning"
+      tools: "Tesla Fleet API, BLE"
+      date:
+        from: "2026"
+      descriptions:
+        - "Investigating official vehicle APIs and public BLE data structures"
+        - "Exploring vehicle-data service ideas"
+
 portfolio:
   title: Portfolio
   contents:
@@ -487,49 +539,36 @@ skill:
     - title: Frontend
       items:
         - title: React
-          level: 7
         - title: Vue
-          level: 9
+        - title: Nuxt
+        - title: Next.js
     - title: Backend
       items:
         - title: Node.js
-          level: 7
         - title: Java Spring Boot
-          level: 8
+        - title: Express.js
+        - title: Spring Batch
     - title: Etc.
       items:
         - title: Flutter
-          level: 3
         - title: TypeScript
-          level: 8
     - title: Database
       items:
         - title: PostgreSQL
-          level: 7
         - title: Oracle
-          level: 7
         - title: MySQL / MariaDB
-          level: 7
         - title: MSSQL
-          level: 6
     - title: DevOps
       items:
         - title: AWS / Azure / GCP
-          level: 6
         - title: Docker
-          level: 8
         - title: Jenkins / GitHub Actions
-          level: 8
         - title: Git
-          level: 8
         - title: Linux / Unix
-          level: 8
     - title: Languages
       items:
         - title: Korean
-          level: 10
         - title: English
-          level: 5
 
 experiences:
   title: Experience
