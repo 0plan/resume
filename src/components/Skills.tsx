@@ -1,23 +1,18 @@
-import { Progress } from "@/components/ui/progress.tsx";
 import { useTranslation } from "react-i18next";
 
 interface IContent {
   title: string;
   items: {
     title: string;
-    level: number;
   }[];
 }
 
 const SkillCategory = ({ title, items }: IContent) => (
   <div>
     <h3 className="mb-3 text-sm font-semibold">{title}</h3>
-    <div className="space-y-3">
+    <div className="flex flex-wrap gap-1.5">
       {items.map((skill) => (
-        <div key={skill.title}>
-          <p className="mb-1.5 text-xs leading-none text-muted-foreground">{skill.title}</p>
-          <Progress value={skill.level * 10} />
-        </div>
+        <span key={skill.title} className="rounded-md border bg-muted px-2 py-1 text-xs">{skill.title}</span>
       ))}
     </div>
   </div>
