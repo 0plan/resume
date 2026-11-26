@@ -1,10 +1,9 @@
 import { test, expect } from "@playwright/test";
 import fs from "node:fs";
-import path from "node:path";
 import { load } from "js-yaml";
 
 const locale = (lang) =>
-  load(fs.readFileSync(`public/locales/${lang}.yml`, "utf8"));
+  load(fs.readFileSync(`src/locales/${lang}.yml`, "utf8"));
 
 test("resume renders, routes work and no runtime errors", async ({
   page,
@@ -55,6 +54,8 @@ test("resume renders, routes work and no runtime errors", async ({
       exact: true,
     }),
   ).toBeVisible();
+  const robots = page.locator('head meta[name="robots"]');
+  await expect(robots).toHaveAttribute("content", "noindex");
   await page.getByRole("link", { name: "Lab", exact: true }).click();
   await page.getByRole("link", { name: /Local AI Development Lab/ }).click();
   await expect(
@@ -64,6 +65,7 @@ test("resume renders, routes work and no runtime errors", async ({
     }),
   ).toBeVisible();
   await expect(page).toHaveURL(/#\/lab\/local-ai-development-lab$/);
+  await expect(robots).toHaveAttribute("content", "noindex");
   await page.getByRole("link", { name: /목록으로/ }).click();
   await expect(page).toHaveURL(/#\/lab$/);
   await page.goto("/resume/#/projects/apple-t2-linux-research");
@@ -145,7 +147,7 @@ test("language and dark mode persist; print works", async ({ page }, info) => {
   }
 });
 
-test("static bilingual HTML and sitemap are available without JavaScript", async ({
+test("resume pages opt out of search indexing and remain readable without JavaScript", async ({
   browser,
   baseURL,
   request,
@@ -155,7 +157,9 @@ test("static bilingual HTML and sitemap are available without JavaScript", async
     baseURL,
   });
   const page = await context.newPage();
+  const robots = page.locator('head meta[name="robots"]');
   await page.goto("/resume/");
+  await expect(robots).toHaveAttribute("content", "noindex");
   await page.getByRole("link", { name: "한국어" }).click();
   for (const lang of ["ko", "en"]) {
     if (lang === "en")
@@ -183,19 +187,22 @@ test("static bilingual HTML and sitemap are available without JavaScript", async
     await expect(
       page.getByRole("link", { name: "GitHub", exact: true }),
     ).toHaveAttribute("href", data.profile.github);
-    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
-      "href",
-      `https://0plan.github.io/resume/static/${lang}.html`,
-    );
+    await expect(robots).toHaveAttribute("content", "noindex");
   }
+  await page.goto("/resume/404.html");
+  await expect(robots).toHaveAttribute("content", "noindex");
+  await expect(
+    page.getByRole("link", { name: "0plan 이력서 / Resume" }),
+  ).toHaveAttribute("href", "/resume/");
   await context.close();
-  const sitemap = await request.get("/resume/sitemap.xml");
-  expect(sitemap.ok()).toBe(true);
-  expect(await sitemap.text()).toContain("static/ko.html");
-  expect(fs.existsSync(path.resolve("dist/static/en.html"))).toBe(true);
-  expect((await request.get("/resume/no-such-page")).status()).toBe(404);
-  const notFound = await request.get("/resume/404.html");
-  expect(await notFound.text()).toContain('href="/resume/"');
+  for (const path of [
+    "no-such-page",
+    "sitemap.xml",
+    "locales/ko.yml",
+    "locales/en.yml",
+  ]) {
+    expect((await request.get(`/resume/${path}`)).status(), path).toBe(404);
+  }
 });
 
 test("terminal cube favicon and manifest resolve from resume and static pages", async ({

@@ -18,7 +18,7 @@ for (const lang of ["ko", "en"]) {
     `${lang}: blank PDF page`,
   );
   const contents = normalize(text);
-  const data = load(readFileSync(`public/locales/${lang}.yml`, "utf8"));
+  const data = load(readFileSync(`src/locales/${lang}.yml`, "utf8"));
   const fields = [...Object.values(data.profile)];
   for (const key of [
     "experiences",

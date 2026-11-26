@@ -1,14 +1,26 @@
 import i18n from "i18next";
-import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import yaml from "js-yaml";
+import en from "@/locales/en.yml?raw";
+import ko from "@/locales/ko.yml?raw";
+
+function loadLocale(source: string) {
+  const translation = yaml.load(source);
+  if (
+    !translation ||
+    typeof translation !== "object" ||
+    Array.isArray(translation)
+  ) {
+    throw new Error("Expected a resume translation object");
+  }
+  return { translation };
+}
 
 i18n.on("languageChanged", (language) => {
   document.documentElement.lang = language.startsWith("ko") ? "ko" : "en";
 });
 void i18n
-  .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
@@ -20,10 +32,7 @@ void i18n
       caches: ["localStorage"],
     },
     interpolation: { escapeValue: false },
-    backend: {
-      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}.yml`,
-      parse: (data: string) => yaml.load(data),
-    },
+    resources: { ko: loadLocale(ko), en: loadLocale(en) },
   });
 
 export default i18n;

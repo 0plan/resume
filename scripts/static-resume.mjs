@@ -4,11 +4,10 @@ import { load } from "js-yaml";
 import { createServer } from "vite";
 
 const languages = ["ko", "en"];
-const site = "https://0plan.github.io/resume/";
 const locales = Object.fromEntries(
   languages.map((lang) => [
     lang,
-    load(fs.readFileSync(`public/locales/${lang}.yml`, "utf8")),
+    load(fs.readFileSync(`src/locales/${lang}.yml`, "utf8")),
   ]),
 );
 
@@ -65,18 +64,9 @@ const server = await createServer({
 try {
   const { renderPage } = await server.ssrLoadModule("/scripts/static-page.tsx");
   for (const lang of languages) {
-    const html = await renderPage(lang, locales[lang], styles, site);
+    const html = await renderPage(lang, locales[lang], styles);
     fs.writeFileSync(`dist/static/${lang}.html`, `<!doctype html>\n${html}`);
   }
 } finally {
   await server.close();
 }
-
-const pages = ["", ...languages.map((lang) => `static/${lang}.html`)];
-fs.writeFileSync(
-  "dist/sitemap.xml",
-  `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages.map((path) => `  <url><loc>${site}${path}</loc></url>`).join("\n")}
-</urlset>\n`,
-);

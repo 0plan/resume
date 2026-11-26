@@ -8,7 +8,6 @@ export async function renderPage(
   lang: string,
   data: ResourceLanguage,
   styles: string[],
-  site: string,
 ) {
   const i18n = createInstance();
   await i18n.init({
@@ -24,17 +23,9 @@ export async function renderPage(
         <head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
+          <meta name="robots" content="noindex" />
           <title>{`${t("profile.name")} | ${t("profile.position")} | 0plan`}</title>
           <meta name="description" content={t("profile.description")} />
-          <link rel="canonical" href={`${site}static/${lang}.html`} />
-          {["ko", "en"].map((code) => (
-            <link
-              key={code}
-              rel="alternate"
-              hrefLang={code}
-              href={`${site}static/${code}.html`}
-            />
-          ))}
           <link
             rel="icon"
             type="image/png"
