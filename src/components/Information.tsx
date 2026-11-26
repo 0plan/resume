@@ -18,7 +18,7 @@ export interface InformationProps {
 function CreateLink({ description }: { description: string }) {
   return <>{description.split(/(https?:\/\/[^\s\[\]<>"']+)/g).map((part, index) =>
     /^https?:\/\//.test(part)
-      ? <a key={index} href={part} target="_blank" rel="noopener noreferrer" className="break-all underline underline-offset-2 text-foreground">{part}</a>
+      ? <a key={index} href={part} target="_blank" rel="noopener noreferrer" className="break-all underline underline-offset-2 text-primary">{part}</a>
       : part
   )}</>;
 }
@@ -27,7 +27,7 @@ function CreateLink({ description }: { description: string }) {
 const Information = ({ documents }: InformationProps) => {
   return (
     <section className="@container">
-      <h2 className="border-b border-foreground pb-2 text-lg font-bold">
+      <h2 className="border-b border-primary/40 pb-2 text-lg font-bold">
         {documents.title}
       </h2>
       <div className="divide-y">

@@ -18,16 +18,16 @@ const AboutMe = () => {
       </div>
       <p className="text-sm text-muted-foreground">{t("profile.description")}</p>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <button type="button" onClick={() => window.print()} className="print:hidden rounded-md border px-3 py-1.5 text-sm font-medium">{i18n.language.startsWith("ko") ? "PDF 저장 / 인쇄" : "Save PDF / Print"}</button>
-        <a target="_blank" rel="noreferrer" href={t("profile.blog")} className="flex items-center text-sm hover:underline">
+        <button type="button" onClick={() => window.print()} className="print:hidden rounded-md border border-primary bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:opacity-90">{i18n.language.startsWith("ko") ? "PDF 저장 / 인쇄" : "Save PDF / Print"}</button>
+        <a target="_blank" rel="noreferrer" href={t("profile.blog")} className="flex items-center text-sm text-primary hover:underline">
           <Home className="mr-1 h-4 w-4" />
           Blog
         </a>
-        <a target="_blank" rel="noreferrer" href={t("profile.github")} className="flex items-center text-sm hover:underline">
+        <a target="_blank" rel="noreferrer" href={t("profile.github")} className="flex items-center text-sm text-primary hover:underline">
           <Github className="mr-1 h-4 w-4" />
           GitHub
         </a>
-        <a target="_blank" rel="noreferrer" href={`mailto:${t("profile.email")}`} className="flex items-center text-sm hover:underline">
+        <a target="_blank" rel="noreferrer" href={`mailto:${t("profile.email")}`} className="flex items-center text-sm text-primary hover:underline">
           <Mail className="mr-1 h-4 w-4" />
           Email
         </a>

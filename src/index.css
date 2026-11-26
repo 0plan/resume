@@ -1,5 +1,6 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 
+@import './styles/brand.css';
 @import 'tailwindcss';
 
 @plugin 'tailwindcss-animate';
@@ -24,34 +25,6 @@
   --color-ring: var(--ring);
 }
 
-/* 무채색 토큰: chroma 0, 밝기 단계만 쓴다 */
-:root {
-  --radius: 0.25rem;
-  --background: oklch(0.985 0 0);
-  --foreground: oklch(0.17 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.17 0 0);
-  --primary: oklch(0.22 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.955 0 0);
-  --muted-foreground: oklch(0.46 0 0);
-  --border: oklch(0.9 0 0);
-  --ring: oklch(0.6 0 0);
-}
-
-.dark {
-  --background: oklch(0.24 0 0);
-  --foreground: oklch(0.9 0 0);
-  --card: oklch(0.28 0 0);
-  --card-foreground: oklch(0.9 0 0);
-  --primary: oklch(0.82 0 0);
-  --primary-foreground: oklch(0.24 0 0);
-  --muted: oklch(0.33 0 0);
-  --muted-foreground: oklch(0.72 0 0);
-  --border: oklch(0.37 0 0);
-  --ring: oklch(0.6 0 0);
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -64,7 +37,6 @@
 
 @media print {
   @page { size: A4; margin: 13mm; }
-  :root, .dark { --background: white; --foreground: #111; --muted: #f5f5f5; --muted-foreground: #444; --border: #ccc; }
   body { font-size: 10pt; background: white; color: #111; }
   header, footer, .print-hidden { display: none !important; }
   main { margin: 0 !important; padding: 0 !important; max-width: none !important; }
@@ -73,4 +45,8 @@
   a { color: #111 !important; text-decoration: underline; }
 }
 
-@layer base { a { overflow-wrap: anywhere; } }
+@layer base {
+  a { overflow-wrap: anywhere; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+  ::selection { background: var(--primary); color: var(--primary-foreground); }
+}

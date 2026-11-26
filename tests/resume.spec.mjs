@@ -95,3 +95,38 @@ test("terminal cube favicon and manifest resolve from resume and static pages", 
   const data = await manifest.json();
   for (const item of data.icons) expect((await request.get(new URL(item.src, manifest.url()).href)).ok()).toBe(true);
 });
+
+test("brand colors and text contrast work in light, dark and print", async ({ page }, info) => {
+  await page.goto("/resume/");
+  await expect(page.getByRole("heading", { name: "대표 개인 프로젝트", exact: true })).toBeVisible();
+  const check = async (dark) => {
+    const tokens = await page.evaluate(() => {
+      const css = getComputedStyle(document.body);
+      const names = ["background", "foreground", "card", "primary", "primary-foreground", "muted", "muted-foreground"];
+      return Object.fromEntries(names.map(name => [name, css.getPropertyValue("--" + name).trim().toLowerCase()]));
+    });
+    expect(tokens.background).toBe(dark ? "#0f172a" : "#f1f5f9");
+    expect(tokens.primary).toBe(dark ? "#14b8a6" : "#0f766e");
+    const lum = hex => {
+      const [r,g,b] = hex.slice(1).match(/../g).map(v => parseInt(v,16)/255).map(v => v <= .04045 ? v/12.92 : ((v+.055)/1.055)**2.4);
+      return .2126*r + .7152*g + .0722*b;
+    };
+    for (const [a,b] of [["foreground","background"],["primary","background"],["primary","card"],["primary-foreground","primary"],["muted-foreground","background"],["muted-foreground","muted"]]) {
+      const values = [lum(tokens[a]),lum(tokens[b])].sort((x,y)=>y-x);
+      expect((values[0]+.05)/(values[1]+.05), a + " / " + b).toBeGreaterThanOrEqual(4.5);
+    }
+    await expect(page.locator("body")).toHaveCSS("background-color", dark ? "rgb(15, 23, 42)" : "rgb(241, 245, 249)");
+    await page.screenshot({ path: info.outputPath(dark ? "brand-dark.png" : "brand-light.png"), fullPage: true });
+  };
+  await check(false);
+  await page.getByRole("button", { name: "Toggle dark mode" }).click();
+  await expect(page.locator("body")).toHaveClass(/dark/);
+  await check(true);
+  await page.emulateMedia({ media: "print" });
+  await expect(page.locator("body")).toHaveCSS("background-color", "rgb(255, 255, 255)");
+  await expect(page.locator("body")).toHaveCSS("color", "rgb(17, 17, 17)");
+  await page.emulateMedia({ media: "screen" });
+  await page.goto("/resume/static/ko.html");
+  await expect(page.locator("body")).toHaveCSS("background-color", "rgb(241, 245, 249)");
+  await expect(page.locator("body")).toHaveCSS("color", "rgb(15, 23, 42)");
+});

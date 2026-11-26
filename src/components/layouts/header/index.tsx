@@ -9,18 +9,18 @@ const Header = () => {
   const { toggleLang } = useLanguage();
 
   return (
-    <header className="print:hidden sticky top-0 flex min-h-14 items-center justify-between gap-2 px-4 border-b z-50 backdrop-blur-sm">
+    <header className="print:hidden sticky top-0 flex min-h-14 items-center justify-between gap-2 px-4 border-b z-50 bg-background/95 backdrop-blur-sm">
       <nav
         className="mx-auto flex w-full max-w-340 items-center justify-between px-4"
         aria-label="Global"
       >
-        <Link to="/" className="text-base font-semibold">
+        <Link to="/" className="text-base font-semibold text-primary">
           {t("project.title")}
         </Link>
         <div className="flex flex-wrap items-center justify-end gap-2 text-xs sm:text-sm">
-          <Link to="/projects">{i18n.language.startsWith("ko") ? "프로젝트" : "Projects"}</Link>
-          <Link to="/lab">Lab</Link>
-          <a href={t("profile.blog")} target="_blank" rel="noreferrer">Blog</a>
+          <Link to="/projects" className="hover:text-primary">{i18n.language.startsWith("ko") ? "프로젝트" : "Projects"}</Link>
+          <Link to="/lab" className="hover:text-primary">Lab</Link>
+          <a href={t("profile.blog")} target="_blank" rel="noreferrer" className="hover:text-primary">Blog</a>
           
           <ToggleDarkMode />
           <button onClick={toggleLang} aria-label="Toggle language" className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">

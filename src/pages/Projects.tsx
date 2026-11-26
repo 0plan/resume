@@ -25,7 +25,7 @@ export default function Projects({ lab = false }: { lab?: boolean }) {
   if (id && !selected) return <section><h1>{ko ? "프로젝트를 찾을 수 없습니다." : "Project not found."}</h1><Link to="/projects">Projects</Link></section>;
   return <section className="mx-auto max-w-4xl space-y-6">
     <title>{(selected?.name ?? (lab ? "Research & Labs" : "Projects")) + " | 0plan"}</title>
-    <Link to={id ? "/projects" : "/"} className="text-sm underline">{ko ? "뒤로" : "Back"}</Link>
+    <Link to={id ? "/projects" : "/"} className="text-sm text-primary underline">{ko ? "뒤로" : "Back"}</Link>
     <h1 className="text-3xl font-bold">{selected?.name ?? (lab ? t("labs.title") : t("featured.title"))}</h1>
     {selected ? <article className="space-y-4">
       <p className="text-muted-foreground">{selected.position}</p>
@@ -33,8 +33,8 @@ export default function Projects({ lab = false }: { lab?: boolean }) {
       <h2 className="text-lg font-semibold">{ko ? "프로젝트 개요 및 작업 내용" : "Overview and work"}</h2>
       <ul className="list-disc space-y-2 pl-5">{selected.descriptions?.map(d => <li key={d}>{d}</li>)}</ul>
       {selected.name.startsWith("Private Cloud") && <Architecture ko={ko}/>}
-      {selected.name.startsWith("Private Cloud") && <a className="underline" href={t("profile.blog")}>{ko ? "관련 기술 블로그" : "Related technical blog"}</a>}
+      {selected.name.startsWith("Private Cloud") && <a className="text-primary underline" href={t("profile.blog")}>{ko ? "관련 기술 블로그" : "Related technical blog"}</a>}
       <p className="text-sm text-muted-foreground">{ko ? "공개 가능한 범위의 개요이며, 측정되지 않은 성능 지표는 포함하지 않았습니다." : "Public overview; unmeasured performance metrics are intentionally omitted."}</p>
-    </article> : <div className="grid gap-4 sm:grid-cols-2">{(lab ? labs : featured).map(item => <Link key={item.name} to={"/projects/" + slug(item.name)} className="space-y-3 rounded-lg border bg-card p-5 hover:border-foreground"><h2 className="font-semibold">{item.name}</h2><p className="text-sm text-muted-foreground">{item.position}</p><p className="text-sm">{item.tools}</p><p className="text-sm">{item.descriptions?.[0]}</p><span className="text-sm underline">{ko ? "상세 보기" : "Details"}</span></Link>)}</div>}
+    </article> : <div className="grid gap-4 sm:grid-cols-2">{(lab ? labs : featured).map(item => <Link key={item.name} to={"/projects/" + slug(item.name)} className="space-y-3 rounded-lg border bg-card p-5 hover:border-primary"><h2 className="font-semibold">{item.name}</h2><p className="text-sm text-muted-foreground">{item.position}</p><p className="text-sm">{item.tools}</p><p className="text-sm">{item.descriptions?.[0]}</p><span className="text-sm text-primary underline">{ko ? "상세 보기" : "Details"}</span></Link>)}</div>}
   </section>;
 }

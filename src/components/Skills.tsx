@@ -24,7 +24,7 @@ const Skills = () => {
 
   return (
     <section>
-      <h2 className="border-b border-foreground pb-2 text-lg font-bold">
+      <h2 className="border-b border-primary/40 pb-2 text-lg font-bold">
         {t("skill.title")}
       </h2>
       <div className="grid gap-6 pt-4 sm:grid-cols-2 lg:grid-cols-1">
